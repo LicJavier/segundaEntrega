@@ -1,0 +1,25 @@
+    <main class="flex flex-col  items-center bg-cyan-500  m-0">
+        <h1 class="font-mono font-extrabold text-5xl m-5 p-5 " >5 Productos Random by Faker-js</h1>
+        <div >
+            <table class="table-auto m-10 text-2xl bg-green-400 ">
+                <thead>
+                    <tr class="p-5 m-5 ">
+                        <td class="p-5 font-mono text-3xl">Nombre</td>
+                        <td class="p-5 font-mono text-3xl">Precio</td>
+                        <td class="p-5 font-mono text-3xl">Imagen</td>
+                    </tr>
+                </thead>
+                {{#each producto}}
+                <tbody>
+                    <tr>
+                        <td class="p-5 font-mono text-3xl">{{this.nombre}}</td>
+                        <td class="p-5 font-mono text-3xl">$ {{this.precio}}</td>
+                        <td class="p-5 font-mono text-3xl"><img src={{this.image}} alt="logo producto"></td>
+                    </tr>
+                </tbody>
+                {{/each}}
+            </table>
+        </div>
+    </main>
+    {{> footer}}
+    
