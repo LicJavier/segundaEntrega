@@ -1,8 +1,8 @@
 <main class="flex flex-col  items-center bg-cyan-500  m-0">
         <h1 class="font-mono font-extrabold text-5xl m-5 p-5 " >Centro de Mensajes</h1>
-        <h2 class="text-3xl font-bold font-mono underline m-4 compresion"></h2>
+        <h2 class="text-3xl font-bold font-mono underline m-4" id="compresion">Compresión de los mensajes </h2>
         <div>
-    <form action="/" method="post" class="flex flex-col text-center items-center bg-cyan-500 p-4 formMensaje">
+    <form action="" class="flex flex-col text-center items-center bg-cyan-500 p-4 formMensaje">
         <label for="user" class="font-mon">Email</label>
         <input type="email" class="text-center" id="user" required>
         <label for="nombre" class="font-mon">Nombre</label>
@@ -21,17 +21,14 @@
     </form>
     <p class="font-mono" >Desde el Servidor: <span id="mensajeRecibido"></span></p>
     <div class="p-5 m-5 bg-white ">
-        <p class="font-mono" id="historial">
-            {{#each DB_MENSAJES}}
-                <span><b class="text-blue-600 font-bold" >{{this.nombre.author.id}}: </b></span>
-                <span class="text-amber-800">{{this.nombre.hora}}: </span>
-                <span class="italic text-green-700">{{this.nombre.text}}</span></span></br>
-            {{/each}}
-        </p>
+        <p class="font-mono flex flex-col" id="historial"></p>
     </div>
 </div>
     </main>
     {{> footer}}
     <script src="/socket.io/socket.io.js"></script>
+    <script>
+        const socket = io();
+    </script>
     <script src="/scripts/script.js"></script>
     

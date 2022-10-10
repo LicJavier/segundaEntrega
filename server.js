@@ -57,14 +57,7 @@ app.get('/api/productos-test', async ( req , res )=>{
     res.render('productos', {producto} );
 })
 app.get('/', async ( req , res )=>{
-
-        DB_MENSAJES = await mensajesDao.listarTodoNormalizado();
-        
-    res.render( 'home' , {DB_MENSAJES : DB_MENSAJES.entities.posts.mensajes.msj} );
-})
-app.post('/', async (req, res)=>{
-    io.sockets.emit('update-mensaje' , req.body);
-    res.redirect("/");
+    res.render( 'home');
 })
 
 //----------------------------------------------------------------------------------------------
@@ -76,6 +69,8 @@ httpServer.listen(PORT, () => console.log(`escuchando en ${PORT}`));
 
 io.on('connection', async (socket)=>{
     console.log(`nuevo cliente conectado ${socket.id}`);
+
+    io.sockets.emit('los mensajes', await mensajesDao.listarTodoNormalizado())
 
     socket.on( 'from-cliente-msj' , async ( data ) => {
         const newData = { ...data , hora: `${hoy.format( 'Do MMMM YYYY, h:mm:ss a' ) }` };
