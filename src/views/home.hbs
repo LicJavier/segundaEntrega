@@ -1,34 +1,40 @@
-<main class="flex flex-col  items-center bg-cyan-500  m-0">
+<div class="flex flex-col w-auto h-screen">
+    <nav class="flex bg-blue-500 p-5 font-mono text-xl justify-between">
+        <p class="p-4">Bienvenido {{usuario}} </p>
+        <button onclick="location.href = '/deslogueo'">Desloguearse</button>
+    </nav>
+    <main class="flex flex-col  items-center bg-cyan-500  m-0">
         <h1 class="font-mono font-extrabold text-5xl m-5 p-5 " >Centro de Mensajes</h1>
-        <h2 class="text-3xl font-bold font-mono underline m-4" id="compresion">Compresión de los mensajes </h2>
-        <div>
-    <form action="" class="flex flex-col text-center items-center bg-cyan-500 p-4 formMensaje">
-        <label for="user" class="font-mon">Email</label>
-        <input type="email" class="text-center" id="user" required>
-        <label for="nombre" class="font-mon">Nombre</label>
-        <input type="text" class="text-center" id="nombre" required>
-        <label for="apellido" class="font-mon">Apellido</label>
-        <input type="text" class="text-center" id="apellido" required>
-        <label for="edad" class="font-mon">Edad</label>
-        <input type="number" class="text-center" id="edad" required>
-        <label for="apodo" class="font-mon">Apodo</label>
-        <input type="text" class="text-center" id="apodo" required>
-        <label for="avatar" class="font-mon">Avatar</label>
-        <input type="text" class="text-center" id="avatar" required>
-        <label class="font-mono">Deja tu mensaje</label>
-        <input type="text" id="contenidoMensaje" required>
-        <button id="enviar" class="border-solid border-2 border-sky-500 bg-gradient-to-r from-blue-700 to-purple-600 font-mono m-6 p-2 shadow-md">Enviar Mensaje</button>
-    </form>
-    <p class="font-mono" >Desde el Servidor: <span id="mensajeRecibido"></span></p>
-    <div class="p-5 m-5 bg-white ">
-        <p class="font-mono flex flex-col" id="historial"></p>
-    </div>
-</div>
+        <h4 class="text-3xl font-bold font-mono underline m-4" id="compresion">Compresión de los mensajes </h4>
+            <div>
+            <form action="" class="flex flex-col text-center items-center bg-cyan-500 p-4 formMensaje">
+                <label for="user" class="font-mono">Email</label>
+                <input type="email" class="text-center" id="user" required>
+                <label for="nombre" class="font-mono">Nombre</label>
+                <input type="text" class="text-center" id="nombre" required>
+                <label for="apellido" class="font-mono">Apellido</label>
+                <input type="text" class="text-center" id="apellido" required>
+                <label for="edad" class="font-mon">Edad</label>
+                <input type="number" class="text-center" id="edad" required>
+                <label for="apodo" class="font-mono">Apodo</label>
+                <input type="text" class="text-center" id="apodo" required>
+                <label for="avatar" class="font-mono">Avatar</label>
+                <input type="text" class="text-center" id="avatar" required>
+                <label class="font-mono">Deja tu mensaje</label>
+                <textarea name="contenidoMensaje" id="contenidoMensaje" cols="25" rows="5" required></textarea>
+                <button id="enviar" class="border-solid text-white border-2 border-sky-500 bg-gradient-to-r from-blue-700 to-purple-600 font-mono m-6 p-2 shadow-md">Enviar Mensaje</button>
+            </form>
+            <p class="font-mono" >Desde el Servidor: <span id="mensajeRecibido"></span></p>
+            <div class="p-5 m-5 bg-white ">
+                <p class="font-mono flex flex-col" id="historial"></p>
+            </div>
+            </div>
     </main>
     {{> footer}}
-    <script src="/socket.io/socket.io.js"></script>
-    <script>
-        const socket = io();
-    </script>
-    <script src="/scripts/script.js"></script>
+</div>
+<script src="/socket.io/socket.io.js"></script>
+<script>
+    const socket = io();
+</script>
+<script src="/scripts/script.js"></script>
     
