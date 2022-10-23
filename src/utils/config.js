@@ -14,7 +14,7 @@ export default {
     mongodb:
             {
             atlas: {
-                strConn:'mongodb+srv://admincoder:AXFnhISvz6b8m9x5@cluster0.tqytwzg.mongodb.net/ecommerce?retryWrites=true&w=majority'
+                strConn:'mongodb+srv://javier:obG0c2gtpDLXTXrw@cluster0.ulgtmji.mongodb.net/ecommerces?retryWrites=true&w=majority'
             }
     }
 }

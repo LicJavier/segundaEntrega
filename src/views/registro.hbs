@@ -1,0 +1,13 @@
+<main class="flex flex-col items-center bg-red-700 w-auto h-screen">
+    <h1 class="p-4 m-5 text-5xl text-white font-serif italic font-bold underline-offset-1">Inicia sesión para continuar</h1>
+    <form action="/register" method="post" class="m-5 flex flex-col text-center text-white p4 m-4 text-xl font-serif ">
+        <label for="username" class="m-4">Ingresa tu Nombre</label>
+        <input type="text" name="username" id="username" class="text-2xl text-black hover:bg-gray-500" required>
+        <label for="password" class="m-4">Ingresa tu contraseña</label>
+        <input type="password" name="password" id="password" class="text-2xl text-black hover:bg-gray-500" required>
+        <label for="mail" class="m-4">Ingresa tu email</label>
+        <input type="mail" name="mail" id="mail" class="text-2xl text-black hover:bg-gray-500" required>
+        <button class="m-4 p-3 border-2 hover:bg-green-400 hover:text-black hover:border-black" type="submit" value="register" onclick="location.href = '/login'">Ingresar</button>
+    </form>
+    <button class="m-4 p-3 border-2 text-white hover:bg-green-400 hover:text-black hover:border-black " onclick="location.href = '/login'">Ir a Inicio de Sesión</button>
+</main>
