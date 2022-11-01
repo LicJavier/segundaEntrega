@@ -17,6 +17,12 @@ import {Strategy} from 'passport-local';
 const LocalStrategy = Strategy;
 import bcrypt from 'bcrypt';
 import * as dotenv from 'dotenv';
+import minimist from 'minimist';
+
+const options ={ alias : { p : 'puerto' } , default : { p : 8080 } }
+const mini = minimist( process.argv.slice(2) , options );
+
+console.log(mini)
 
 dotenv.config();
 
@@ -27,7 +33,6 @@ const __dirname = dirname(__filename);
 moment.locale('es')
 const hoy = moment()
 export let DB_MENSAJES = [];
-const usuarioDB = [];
 //----------------------------------------------------------------------------------------------
 //-------------------------INSTANCIA DE SERVER--------------------------------------------------
 //----------------------------------------------------------------------------------------------
@@ -38,6 +43,8 @@ import routerProductos from './src/routes/productos.routes.js';
 import routerCarrito from './src/routes/carritos.routes.js';
 import MensajesDaoFirebase from './src/daos/mensajes/mensajesDaoFirebase.js';
 import UsuarioDaoMongoDb from './src/daos/usuariosDaoMongoDb.js';
+import process from 'process';
+import routerRandoms from './src/routes/random.routes.js';
 const usuarioDao = new UsuarioDaoMongoDb();
 const mensajesDao = new MensajesDaoFirebase();
 
@@ -138,6 +145,7 @@ app.set('view engine', 'hbs')
 //----------------------------------------------------------------------------------------------
 app.use('/api/productos', routerProductos);
 app.use('/api/carrito', routerCarrito);
+app.use('/api/randoms', routerRandoms);
 
 app.get('/', (req, res) => {
     res.render('login')
@@ -145,6 +153,12 @@ app.get('/', (req, res) => {
 
 app.get( '/login' , ( req , res ) =>{
     res.render('login')
+})
+
+app.get('/info' , ( req , res ) => {
+    const info = process;
+    const argumentos = process.argv.slice(2).join(', ')
+    res.render( 'info' , { info , argumentos } );
 })
 
 app.get('/api/productos-test', async ( req , res )=>{
@@ -189,17 +203,17 @@ app.get('/deslogueo', async ( req , res )=>{
 });
 
 
+
 //----------------------------------------------------------------------------------------------
 //---------------------------------------SERVIDOR-----------------------------------------------
 //----------------------------------------------------------------------------------------------
-const PORT = dotenv.config().parsed.PORT;
+const PORT = mini.p;
 const io = new Server(httpServer);
 httpServer.listen( PORT , () => console.log(`escuchando en PUERTO: ${PORT}`));
 
 io.on('connection', async (socket)=>{
     console.log(`nuevo cliente conectado ${socket.id}`);
-
-    io.sockets.emit('los mensajes', await mensajesDao.listarTodoNormalizado())
+    
 
     socket.on( 'from-cliente-msj' , async ( data ) => {
         const newData = { ...data , hora: `${hoy.format( 'Do MMMM YYYY, h:mm:ss a' ) }` };
@@ -207,3 +221,18 @@ io.on('connection', async (socket)=>{
         io.sockets.emit('from server msj', await mensajesDao.listarTodoNormalizado() );
     })
 })
+process.on("message", async function (data) {
+    console.log(`Message from main.js: ${data}`);
+    const reducir = data.reduce( ( obj , item ) => {
+        if( !obj[ item ] ){
+            obj[ item ] = 1
+        } else{
+            obj[ item ] = obj[ item ] + 1;
+        }
+        return obj
+    }, {} );
+    console.log(await reducir)
+    io.sockets.emit('enviando-resultado', await reducir );
+});
+
+io.sockets.emit('los mensajes', await mensajesDao.listarTodoNormalizado())
