@@ -145,18 +145,18 @@ app.set('view engine', 'hbs');
 //------------------------------------CLUSTER---------------------------------------------------
 //----------------------------------------------------------------------------------------------
 
-// if (modo == "CLUSTER") {
-//     if (cluster.isPrimary) {
-//         console.log('cantidad de cpus : ' , cpusCores );
-//         console.log(mini);
-//         for (let index = 0; index < cpusCores ; index++) {
-//             cluster.fork();
+if (modo == "CLUSTER") {
+    if (cluster.isPrimary) {
+        console.log('cantidad de cpus : ' , cpusCores );
+        console.log(mini);
+        for (let index = 0; index < cpusCores ; index++) {
+            cluster.fork();
             
-//         }
-//         cluster.on('exit' , worker =>{
-//             console.log(`Worker con PID: ${process.pid} finalizo ${hoy}`);
-//         })
-//     } else {
+        }
+        cluster.on('exit' , worker =>{
+            console.log(`Worker con PID: ${process.pid} finalizo ${hoy}`);
+        })
+    } else {
     
 //----------------------------------------------------------------------------------------------
 //------------------------------RUTAS-----------------------------------------------------------
@@ -166,6 +166,7 @@ app.use('/api/carrito', routerCarrito);
 app.use('/api/randoms', routerRandoms);
 
 app.get('/', (req, res) => {
+    console.log(`Escuchando en PUERTO: ${PORT} - PID WORKER ${process.pid} en modo: ${modo}`);
     res.render('login');
 })
 
@@ -229,9 +230,9 @@ app.get('/deslogueo', async ( req , res )=>{
 //----------------------------------------------------------------------------------------------
 //---------------------------------------SERVIDOR-----------------------------------------------
 //----------------------------------------------------------------------------------------------
-const PORT = parseInt(process.argv[2]) || 8080;
+const PORT = mini.p;
 const io = new Server(httpServer);
-httpServer.listen( PORT , () => console.log(`Escuchando en PUERTO: ${PORT} - PID WORKER ${process.pid}`));
+httpServer.listen( PORT , () => console.log(`Escuchando en PUERTO: ${PORT} - PID WORKER ${process.pid} en modo: ${modo}`));
 
 io.on('connection', async (socket)=>{
     console.log(`nuevo cliente conectado ${socket.id}`);
@@ -246,5 +247,5 @@ io.on('connection', async (socket)=>{
 
 io.sockets.emit('los mensajes', await mensajesDao.listarTodoNormalizado());
 
-//     }
-// }
+    }
+}

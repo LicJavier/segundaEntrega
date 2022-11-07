@@ -1,0 +1,19 @@
+#MODO FOREVER
+$ forever start server2.js -p 8080
+
+#MODO NODEMON
+MODO CLUSTER
+$ nodemon server2.js -p 8080 -g CLUSTER
+(Por default los argumentos seran puerto: 8080, gestor: Fork)
+
+#MODO PM2
+$ pm2 start server.js --watch --name "Server Fork 0" -- 8080
+$ pm2 start server.js --watch --name "Server Fork 1" -- 8081
+$ pm2 start server.js --watch --name "Server Fork 2" -- 8082
+$ pm2 start server.js --watch --name "Server Fork 3" -- 8083
+$ pm2 start server.js --watch --name "Server Fork 4" -- 8084
+$ pm2 start server.js --watch --name "Server Fork 5" -- 8085
+
+
+
+
