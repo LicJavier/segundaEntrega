@@ -1,6 +1,6 @@
 import express from 'express'
 import { carritosDao } from '../index.js';
-
+import logger from '../utils/logger.config.js';
 const routerCarrito = express.Router();
 
 const administrador = true;
@@ -17,7 +17,7 @@ routerCarrito.get('/',async ( req , res )=>{
     try {
         res.status(200).json(await carritosDao.listarTodo());
     } catch (error) {
-        console.log(error)
+        logger.warn(error)
     }
 });
 
@@ -27,7 +27,7 @@ routerCarrito.get('/:id', [usuario], async ( req , res )=>{
         const carritoId = await carritosDao.listar(id);
         res.status(200).json(carritoId)
     } catch (error) {
-        console.log(error)
+        logger.warn(error)
     }    
 });
 
@@ -37,7 +37,7 @@ routerCarrito.post('/', [usuario] , async ( req , res )=>{
         const productoEnCarrito = await carritosDao.guardar(objeto)
         res.status(201).json({ data: productoEnCarrito, id: productoEnCarrito._id });
     } catch (error) {
-        console.log(error)
+        logger.warn(error)
     }
 });
 
@@ -47,7 +47,7 @@ routerCarrito.delete('/:id', [usuario] , async ( req , res )=>{
         const carritoEliminable = await carritosDao.eliminar(id);
         res.status(202).json({ "producto eliminado" : carritoEliminable })
     } catch (error) {
-        console.log(error)
+        logger.warn(error)
     }
 });
 
@@ -59,7 +59,7 @@ routerCarrito.put('/:id', [usuario] ,async ( req , res )=>{
         let productId = await carritosDao.actualizar( id , body )
         res.status(201).json({ msg: "Producto modificado" , data : productId , id : id });
     } catch (error) {
-        console.log(error);
+        logger.warn(error);
     }
 })
 

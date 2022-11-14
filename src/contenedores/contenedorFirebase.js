@@ -1,5 +1,6 @@
 import admin from 'firebase-admin'
 import config from '../utils/config.js';
+import logger from '../utils/logger.config.js';
 
 
 //Se concecta
@@ -18,10 +19,10 @@ export default class ContenedorFirebase{
         try {
             let doc = this.coleccion.doc(`${id}`);
             const response = await doc.get();
-            console.log('Consulta realizada', response.data())
+            logger.info('Consulta realizada', response.data())
             return response.data()
         } catch ( error ) {
-            console.log( error )
+            logger.error(error) 
         }
     }
     async listarTodo(){
@@ -31,10 +32,10 @@ export default class ContenedorFirebase{
                 id: doc.id,
                 nombre: doc.data()
             }))
-            console.log('Documentos recuperados', docRes);
+            logger.info('Documentos recuperados', docRes);
             return docRes;
         } catch ( error ) {
-            console.log( error )
+            logger.error(error) 
         }
     }
     async guardar( objeto ){
@@ -42,7 +43,7 @@ export default class ContenedorFirebase{
             const res = await this.coleccion.add( objeto ); 
             return res;
         } catch ( error ) {
-            console.log( error )
+            logger.error(error) 
         }
     }
     async actualizar( id , objeto ){
@@ -50,7 +51,7 @@ export default class ContenedorFirebase{
             const res = await this.coleccion.doc( id ).set( objeto );
             return res;
         } catch ( error ) {
-            console.log( error )
+            logger.error(error) 
         }
     }
     async eliminar( id ){
@@ -58,7 +59,7 @@ export default class ContenedorFirebase{
             const res = await this.coleccion.doc( id ).delete();
             return res;
         } catch ( error ) {
-            console.log( error )
+            logger.error(error) 
         }
     }
 }

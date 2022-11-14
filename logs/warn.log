@@ -1,0 +1,9 @@
+[2022-11-12T21:32:16.509] [ERROR] default - Error en el Login
+[2022-11-12T21:32:27.055] [WARN] default - Usuario ya se registro
+[2022-11-12T21:35:43.862] [WARN] default - Ruta desconocida
+[2022-11-12T21:37:16.808] [WARN] default - Ruta desconocida
+[2022-11-12T21:37:43.257] [WARN] default - Ruta desconocida
+[2022-11-12T21:39:37.004] [WARN] default - Ruta desconocida
+[2022-11-12T21:41:12.052] [WARN] default - Ruta desconocida { '0': '/queonda' }
+[2022-11-12T21:41:48.935] [WARN] default - Ruta desconocida { ruta: { '0': '/queloquepasa' } }
+[2022-11-13T19:58:03.929] [WARN] default - Ruta desconocida { ruta: { '0': '/favicon.ico' } }

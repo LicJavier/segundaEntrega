@@ -19,8 +19,7 @@ import bcrypt from 'bcrypt';
 import * as dotenv from 'dotenv';
 import minimist from 'minimist';
 import os from 'os';
-import cluster from 'cluster';
-
+import compression from 'compression';
 const cpusCores = os.cpus().length;
 const options ={ alias : { p : 'puerto' , g : 'gestor' } , default : { p : 8080 , g : 'FORK' } }
 const mini = minimist( process.argv.slice(2) , options );
@@ -46,6 +45,7 @@ import MensajesDaoFirebase from './src/daos/mensajes/mensajesDaoFirebase.js';
 import UsuarioDaoMongoDb from './src/daos/usuariosDaoMongoDb.js';
 import process from 'process';
 import routerRandoms from './src/routes/random.routes.js';
+import logger from './src/utils/logger.config.js';
 const usuarioDao = new UsuarioDaoMongoDb();
 const mensajesDao = new MensajesDaoFirebase();
 
@@ -127,8 +127,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
 app.use(morgan('tiny'));
-
-
+app.use(compression({level:6}));
 //----------------------------------------------------------------------------------------------
 //---------------------------------MOTOR DE PLANTILLA-------------------------------------------
 //----------------------------------------------------------------------------------------------
@@ -141,23 +140,6 @@ app.engine('hbs', expressHandlebars.engine({
 app.set('views', path.join(__dirname, '/src/views'));
 app.set('view engine', 'hbs');
 
-//----------------------------------------------------------------------------------------------
-//------------------------------------CLUSTER---------------------------------------------------
-//----------------------------------------------------------------------------------------------
-
-// if (modo == "CLUSTER") {
-//     if (cluster.isPrimary) {
-//         console.log('cantidad de cpus : ' , cpusCores );
-//         console.log(mini);
-//         for (let index = 0; index < cpusCores ; index++) {
-//             cluster.fork();
-            
-//         }
-//         cluster.on('exit' , worker =>{
-//             console.log(`Worker con PID: ${process.pid} finalizo ${hoy}`);
-//         })
-//     } else {
-    
 //----------------------------------------------------------------------------------------------
 //------------------------------RUTAS-----------------------------------------------------------
 //----------------------------------------------------------------------------------------------
@@ -180,6 +162,8 @@ app.get('/info' , ( req , res ) => {
     const info = process;
     const cores = cpusCores;
     const argumentos = process.argv.slice(2).join(', ');
+    logger.info( argumentos );
+    // console.log(argumentos)
     res.render( 'info' , { info , argumentos , cores } );
 })
 
@@ -200,6 +184,7 @@ app.post('/register', async (req,res)=>{
     const usuario = await usuarioDao.listarTodo()
     const newUsuario = usuario.find( e => e.nombre == username );
     if (newUsuario) {
+        logger.warn('Usuario ya se registro')
         res.render('errorRegister');
     } else {
         const usuarioNuevo = await usuarioDao.guardar({ nombre : username , password : await generateHashPassword(password) , email : mail }) 
@@ -209,32 +194,36 @@ app.post('/register', async (req,res)=>{
 
 app.get('/home', auth , async (req, res) => {
     const usuario = req.user.email;
-    console.log(usuario);
     res.render('home', { usuario } );
 })
 
 app.get( '/errorlogin' , ( req , res ) => {
+    logger.error('Error en el Login')
     res.render('errorlogin');
 })
 
 app.get('/deslogueo', async ( req , res )=>{
     const usuario = req.user.nombre;
     req.logOut(err => {
+        logger.info( "Deslogueo correcto" , usuario )
         res.render( 'deslogueo' , { usuario } ) ;
     });
 });
 
-
+app.get("*", (req,res)=>{
+    logger.warn('Ruta desconocida', {ruta: req.params})
+    res.send('Ruta Desconocida :/')
+})
 
 //----------------------------------------------------------------------------------------------
 //---------------------------------------SERVIDOR-----------------------------------------------
 //----------------------------------------------------------------------------------------------
 const PORT = parseInt(process.argv[2]) || 8080;
 const io = new Server(httpServer);
-httpServer.listen( PORT , () => console.log(`Escuchando en PUERTO: ${PORT} - PID WORKER ${process.pid}`));
+httpServer.listen( PORT , () => logger.info(`Escuchando en PUERTO: ${PORT} - PID WORKER ${process.pid}`));
 
 io.on('connection', async (socket)=>{
-    console.log(`nuevo cliente conectado ${socket.id}`);
+    logger.info(`nuevo cliente conectado ${socket.id}`);
     
 
     socket.on( 'from-cliente-msj' , async ( data ) => {
