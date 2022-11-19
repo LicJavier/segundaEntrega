@@ -30,7 +30,8 @@
     "normalizr": "^3.6.2",
     "passport": "^0.6.0",
     "passport-local": "^1.0.0",
-    "socket.io": "^4.5.2"
+    "socket.io": "^4.5.2",
+    "webpack": "^5.75.0"
   },
   "description": "",
   "devDependencies": {
