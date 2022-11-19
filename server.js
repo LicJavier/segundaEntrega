@@ -218,14 +218,13 @@ app.get("*", (req,res)=>{
 //----------------------------------------------------------------------------------------------
 //---------------------------------------SERVIDOR-----------------------------------------------
 //----------------------------------------------------------------------------------------------
-const PORT = parseInt(process.argv[2]) || 8080;
+const PORT = process.env.PORT || 8080;
 const io = new Server(httpServer);
 httpServer.listen( PORT , () => logger.info(`Escuchando en PUERTO: ${PORT} - PID WORKER ${process.pid}`));
 
 io.on('connection', async (socket)=>{
     logger.info(`nuevo cliente conectado ${socket.id}`);
     
-
     socket.on( 'from-cliente-msj' , async ( data ) => {
         const newData = { ...data , hora: `${hoy.format( 'Do MMMM YYYY, h:mm:ss a' ) }` };
         await mensajesDao.guardar( newData )
