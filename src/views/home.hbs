@@ -24,7 +24,7 @@
                         <td class="p-5 font-mono text-3xl">{{this.nombre.name}}</td>
                         <td class="p-5 font-mono text-3xl">$ {{this.nombre.price}}</td>
                         <td class="p-5 font-mono text-3xl"><img class="max-h-60" src={{this.nombre.img}} alt="logo producto"></td>
-                        <td class="p-5 font-mono text-3xl"> <button  class="text-white bg-black addCart">Agregar al carrito</button></td>
+                        <td class="p-5 font-mono text-3xl"> <button  class="text-white bg-black" onclick="location.href=`/{{this.id}}`">ver producto</button></td>
                     </tr>
                 </tbody>
                 {{/each}}

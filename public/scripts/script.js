@@ -61,3 +61,12 @@ function agregarProducto(data) {
     console.log(product.toString())
     socket.emit('add-cart', product )    
 }
+
+function finalizarPedido(params) {
+    socket.emit("nueva-compra", params)
+}
+
+const finalizar = document.getElementById('realizarCompra');
+finalizar.addEventListener('click', ()=>{
+    finalizarPedido();
+})

@@ -48,7 +48,8 @@ import routerRandoms from './src/routes/random.routes.js';
 import logger from './src/utils/logger.config.js';
 import message from './src/utils/nodemailer.js';
 import ProductosDaoFirebase from './src/daos/productos/productosDaoFirebase.js';
-import { carritosDao } from './src/index.js';
+const carritosDao = new CarritosDaoFirebase();
+import CarritosDaoFirebase from './src/daos/carritos/carritosDaoFirebase.js';
 const usuarioDao = new UsuarioDaoMongoDb();
 const mensajesDao = new MensajesDaoFirebase();
 const productosDao = new ProductosDaoFirebase();
@@ -204,8 +205,11 @@ app.post('/register', async (req,res)=>{
         res.redirect('/');
     }
 })
-
+let username = [];
+let usermail = [];
 app.get('/home', auth , async (req, res) => {
+    username = req.user.nombre;
+    usermail = req.user.email;
     const usuario = req.user.email;
     const producto = await productosDao.listarTodo();
     const userAvatar = req.user.avatar;
@@ -235,6 +239,17 @@ app.get('/deslogueo', async ( req , res )=>{
     });
 });
 
+app.get( '/:id' , auth , async ( req , res )=>{
+    try {        
+        let id = req.params.id;
+        let productId = await productosDao.listar(id);
+        console.log(productId)
+        res.render( 'product' , { productId })   
+    } catch (error) {
+        console.log(error)
+    }
+});
+
 app.get("*", (req,res)=>{
     logger.warn('Ruta desconocida', {ruta: req.params})
     res.send('Ruta Desconocida :/')
@@ -256,6 +271,12 @@ io.on('connection', async (socket)=>{
         logger.info(product)
     })
 
+    socket.on( 'nueva-compra' , async (data) =>{
+        logger.debug(data);
+        const nombre = username;
+        const email = usermail;
+        whatsappMsj( nombre , email )
+    })
     socket.on( 'from-cliente-msj' , async ( data ) => {
         const newData = { ...data , hora: `${hoy.format( 'Do MMMM YYYY, h:mm:ss a' ) }` };
         await mensajesDao.guardar( newData )
@@ -266,4 +287,28 @@ io.on('connection', async (socket)=>{
 
 io.sockets.emit('los mensajes', await mensajesDao.listarTodoNormalizado());
 
+
+io.sockets.on( 'nueva-compra' , async (data) =>{
+    logger.debug(data);
+    const { nombre , email } = user;
+    whatsappMsj( nombre , email )
+})
+
+import twilio from 'twilio';
+
+const TWILIO_SID=process.env.TWILIO_SID;
+const TWILIO_TOKEN= process.env.TWILIO_TOKEN;
+
+const client = twilio( TWILIO_SID , TWILIO_TOKEN )
+
+function whatsappMsj( nombre, mail ) {
+    client.messages 
+    .create({ 
+        body:  `Nuevo pedido de ${nombre}, ${mail} `, 
+        from: 'whatsapp:+14155238886',       
+        to: 'whatsapp:+5491130474577' 
+    }) 
+    .then(message => console.log(message.sid)) 
+    .done();
+}
 
