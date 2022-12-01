@@ -1,9 +1,36 @@
 <div class="flex flex-col w-auto h-screen">
     <nav class="flex bg-blue-500 p-5 font-mono text-xl justify-between">
         <p class="p-4">Bienvenido</p>
-        <button onclick="location.href = '/deslogueo'">{{usuario}} || Desloguearse</button>
+        <div><img class="h-12" id="cartIco" src="./images/cart.png" alt="" srcset=""></div>
+        <div>
+            <img class="max-h-40" src={{userAvatar}} alt="avatar">
+            <span> {{usuario}}</span>
+            <button onclick="location.href = '/deslogueo'"> || Desloguearse</button>
+        </div>
     </nav>
     <main class="flex flex-col  items-center bg-cyan-500  m-0">
+        <div >
+            <table class="table-auto m-10 text-2xl bg-green-400 ">
+                <thead>
+                    <tr class="p-5 m-5 ">
+                        <td class="p-5 font-mono text-3xl">Nombre</td>
+                        <td class="p-5 font-mono text-3xl">Precio</td>
+                        <td class="p-5 font-mono text-3xl">Imagen</td>
+                    </tr>
+                </thead>
+                {{#each producto}}
+                <tbody>
+                    <tr>
+                        <td class="p-5 font-mono text-3xl">{{this.nombre.name}}</td>
+                        <td class="p-5 font-mono text-3xl">$ {{this.nombre.price}}</td>
+                        <td class="p-5 font-mono text-3xl"><img class="max-h-60" src={{this.nombre.img}} alt="logo producto"></td>
+                        <td class="p-5 font-mono text-3xl"> <button  class="text-white bg-black addCart">Agregar al carrito</button></td>
+                    </tr>
+                </tbody>
+                {{/each}}
+            </table>
+        </div>
+        {{!-- CENTRO DE MENSAJES TEMPORALMENTE DESHABILITADOS
         <h1 class="font-mono font-extrabold text-5xl m-5 p-5 " >Centro de Mensajes</h1>
         <h4 class="text-3xl font-bold font-mono underline m-4" id="compresion">Compresión de los mensajes </h4>
             <div>
@@ -28,7 +55,7 @@
             <div class="p-5 m-5 bg-white ">
                 <p class="font-mono flex flex-col" id="historial"></p>
             </div>
-            </div>
+            </div> --}}
     </main>
     {{> footer}}
 </div>

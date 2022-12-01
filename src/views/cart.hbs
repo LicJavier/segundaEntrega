@@ -1,0 +1,38 @@
+<div class="flex flex-col w-auto h-screen">
+    <nav class="flex bg-blue-500 p-5 font-mono text-xl justify-between">
+        <p class="p-4">Carrito de compras</p>
+        <div><img class="h-12" id="cartIco" src="./images/cart.png" alt="" srcset=""></div>
+        <button onclick="location.href = '/deslogueo'">{{usuario}} || Desloguearse</button>
+    </nav>
+    <main class="flex flex-col  items-center bg-cyan-500  m-0">
+        <div >
+            <table class="table-auto m-10 text-2xl bg-green-400 ">
+                <thead>
+                    <tr class="p-5 m-5 ">
+                        <td class="p-5 font-mono text-3xl">Nombre</td>
+                        <td class="p-5 font-mono text-3xl">Precio</td>
+                        <td class="p-5 font-mono text-3xl">Imagen</td>
+                    </tr>
+                </thead>
+                {{#each producto}}
+                <tbody>
+                    <tr>
+                        <td class="p-5 font-mono text-3xl">{{this.nombre.name}}</td>
+                        <td class="p-5 font-mono text-3xl">$ {{this.nombre.price}}</td>
+                        <td class="p-5 font-mono text-3xl"><img class="max-h-60" src={{this.nombre.img}} alt="logo producto"></td>
+                    </tr>
+                </tbody>
+                {{/each}}
+            </table>
+            <button class="m-5 p-5 font-mono text-xl bg-gray-400">Comprar</button>
+        </div>
+        <button class="m-5 p-5 font-mono text-2x1 bg-gray-400" onclick="location.href = '/home'" >Volver a la Página Principal</button>
+    </main>
+    {{> footer}}
+</div>
+<script src="/socket.io/socket.io.js"></script>
+<script>
+    const socket = io();
+</script>
+<script src="/scripts/script.js"></script>
+    

@@ -46,8 +46,12 @@ import UsuarioDaoMongoDb from './src/daos/usuariosDaoMongoDb.js';
 import process from 'process';
 import routerRandoms from './src/routes/random.routes.js';
 import logger from './src/utils/logger.config.js';
+import message from './src/utils/nodemailer.js';
+import ProductosDaoFirebase from './src/daos/productos/productosDaoFirebase.js';
+import { carritosDao } from './src/index.js';
 const usuarioDao = new UsuarioDaoMongoDb();
 const mensajesDao = new MensajesDaoFirebase();
+const productosDao = new ProductosDaoFirebase();
 
 //----------------------------------------------------------------------------------------------
 //------------------------------PASSPORT-----------------------------------------------------
@@ -56,7 +60,7 @@ const mensajesDao = new MensajesDaoFirebase();
 passport.use(new LocalStrategy(
     async function ( username, password , cb) {
         const usuario = await usuarioDao.listarTodo()
-        const usuarioExistente = usuario.find( e => e.nombre == username )
+        const usuarioExistente = usuario.find( e => e.email == username )
         console.log(usuarioExistente)
         if ( !usuarioExistente ) {
             return cb( null , false )
@@ -163,7 +167,6 @@ app.get('/info' , ( req , res ) => {
     const cores = cpusCores;
     const argumentos = process.argv.slice(2).join(', ');
     logger.info( argumentos );
-    // console.log(argumentos)
     res.render( 'info' , { info , argumentos , cores } );
 })
 
@@ -179,27 +182,49 @@ app.get('/registro', (req, res) => {
 app.post('/login', passport.authenticate( 'local', { successRedirect : '/home' , failureRedirect : '/errorlogin'}));
 
 app.post('/register', async (req,res)=>{
-    const { username , password , mail } = req.body;
-
-    const usuario = await usuarioDao.listarTodo()
-    const newUsuario = usuario.find( e => e.nombre == username );
+    const { nombre , password , username , apellido , direccion , edad , telefono , avatar } = req.body;
+    const admin = process.env.ACCOUNT_MAIL;
+    const usuario = await usuarioDao.listarTodo();
+    const newUsuario = usuario.find( e => e.username == username );
     if (newUsuario) {
         logger.warn('Usuario ya se registro')
         res.render('errorRegister');
     } else {
-        const usuarioNuevo = await usuarioDao.guardar({ nombre : username , password : await generateHashPassword(password) , email : mail }) 
+        const usuarioNuevo = await usuarioDao.guardar({ 
+            nombre : nombre, 
+            password : await generateHashPassword(password), 
+            email : username,
+            apellido : apellido,
+            direccion : direccion,
+            edad : edad,
+            telefono : telefono,
+            avatar: avatar
+            }) 
+        message( admin , username , nombre , apellido , direccion , edad , telefono )
         res.redirect('/');
     }
 })
 
 app.get('/home', auth , async (req, res) => {
     const usuario = req.user.email;
-    res.render('home', { usuario } );
+    const producto = await productosDao.listarTodo();
+    const userAvatar = req.user.avatar;
+    res.render('home', { usuario , producto , userAvatar });
+})
+
+app.get('/cart', auth , async (req, res) => {
+    const usuario = req.user.email;
+    const carrito = await carritosDao.listarTodo()
+    res.render('cart', { usuario , carrito });
 })
 
 app.get( '/errorlogin' , ( req , res ) => {
     logger.error('Error en el Login')
-    res.render('errorlogin');
+    res.render('errorLogin');
+})
+
+app.get( '/registrosuccess' , ( req , res ) => {
+    res.render('registroSucces');
 })
 
 app.get('/deslogueo', async ( req , res )=>{
@@ -225,14 +250,20 @@ httpServer.listen( PORT , () => logger.info(`Escuchando en PUERTO: ${PORT} - PID
 io.on('connection', async (socket)=>{
     logger.info(`nuevo cliente conectado ${socket.id}`);
     
+    socket.on('add-cart', async (data)=>{
+        const product = await productosDao.listar(data);
+        await carritosDao.guardar(product);
+        logger.info(product)
+    })
+
     socket.on( 'from-cliente-msj' , async ( data ) => {
         const newData = { ...data , hora: `${hoy.format( 'Do MMMM YYYY, h:mm:ss a' ) }` };
         await mensajesDao.guardar( newData )
         io.sockets.emit('from server msj', await mensajesDao.listarTodoNormalizado() );
     })
-})
+}
+)
 
 io.sockets.emit('los mensajes', await mensajesDao.listarTodoNormalizado());
 
-//     }
-// }
+
