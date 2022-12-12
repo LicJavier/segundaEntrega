@@ -210,3 +210,447 @@
 [2022-12-01T00:15:47.595] [WARN] default - Ruta desconocida { ruta: { '0': '/favicon.ico' } }
 [2022-12-01T00:37:24.130] [WARN] default - Ruta desconocida { ruta: { '0': '/home/qhxEw4LnuAlFLtM7ziWF' } }
 [2022-12-01T00:39:16.938] [WARN] default - Ruta desconocida { ruta: { '0': '/home/qhxEw4LnuAlFLtM7ziWF' } }
+[2022-12-11T16:56:20.311] [ERROR] default - Error en el Login
+[2022-12-11T17:15:29.659] [ERROR] default - Error en el Login
+[2022-12-11T17:15:48.107] [ERROR] default - Error en el Login
+[2022-12-11T17:21:49.614] [WARN] default - Ruta desconocida { ruta: { '0': '/1M8BYFj8YYy0GbWl8ZFa' } }
+[2022-12-11T17:44:26.986] [WARN] default - Ruta desconocida { ruta: { '0': '/add/1M8BYFj8YYy0GbWl8ZFa' } }
+[2022-12-11T17:52:11.050] [WARN] default - Ruta desconocida { ruta: { '0': '/add/1M8BYFj8YYy0GbWl8ZFa' } }
+[2022-12-11T17:58:15.112] [WARN] default - Ruta desconocida { ruta: { '0': '/add/images/cart.png' } }
+[2022-12-11T18:04:47.189] [WARN] default - Ruta desconocida { ruta: { '0': '/add/images/cart.png' } }
+[2022-12-11T18:07:03.096] [WARN] default - Ruta desconocida { ruta: { '0': '/add/images/cart.png' } }
+[2022-12-11T18:08:57.991] [WARN] default - Ruta desconocida { ruta: { '0': '/add/images/cart.png' } }
+[2022-12-11T18:11:21.184] [WARN] default - Ruta desconocida { ruta: { '0': '/add/images/cart.png' } }
+[2022-12-11T18:49:07.070] [WARN] default - Ruta desconocida { ruta: { '0': '/add/images/cart.png' } }
+[2022-12-11T22:26:29.563] [ERROR] default - ReferenceError: productosDaoMongo is not defined
+    at home (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/controllers/page.controller.js:34:22)
+    at Layer.handle [as handle_request] (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\route.js:144:13)
+    at auth (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/server.js:121:16)
+    at Layer.handle [as handle_request] (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\index.js:346:12)
+[2022-12-11T22:27:34.573] [ERROR] default - CastError: Cast to ObjectId failed for value "favicon.ico" (type string) at path "_id" for model "productos"
+    at model.Query.exec (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:4884:21)
+    at Query.then (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:4983:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  messageFormat: undefined,
+  stringValue: '"favicon.ico"',
+  kind: 'ObjectId',
+  value: 'favicon.ico',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at SchemaType.applySetters (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1201:12)
+      at SchemaType._castForQuery (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1648:15)
+      at SchemaType.castForQuery (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1636:15)
+      at SchemaType.castForQueryWrapper (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\cast.js:347:32)
+      at Query.cast (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:5312:12),
+  valueType: 'string'
+}
+[2022-12-11T22:27:57.767] [ERROR] default - CastError: Cast to ObjectId failed for value "favicon.ico" (type string) at path "_id" for model "productos"
+    at model.Query.exec (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:4884:21)
+    at Query.then (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:4983:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  messageFormat: undefined,
+  stringValue: '"favicon.ico"',
+  kind: 'ObjectId',
+  value: 'favicon.ico',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at SchemaType.applySetters (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1201:12)
+      at SchemaType._castForQuery (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1648:15)
+      at SchemaType.castForQuery (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1636:15)
+      at SchemaType.castForQueryWrapper (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\cast.js:347:32)
+      at Query.cast (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:5312:12),
+  valueType: 'string'
+}
+[2022-12-11T22:28:23.192] [ERROR] default - CastError: Cast to ObjectId failed for value "qhxEw4LnuAlFLtM7ziWF" (type string) at path "_id" for model "productos"
+    at model.Query.exec (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:4884:21)
+    at Query.then (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:4983:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  messageFormat: undefined,
+  stringValue: '"qhxEw4LnuAlFLtM7ziWF"',
+  kind: 'ObjectId',
+  value: 'qhxEw4LnuAlFLtM7ziWF',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at SchemaType.applySetters (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1201:12)
+      at SchemaType._castForQuery (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1648:15)
+      at SchemaType.castForQuery (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1636:15)
+      at SchemaType.castForQueryWrapper (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\cast.js:347:32)
+      at Query.cast (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:5312:12),
+  valueType: 'string'
+}
+[2022-12-11T22:33:02.924] [ERROR] default - CastError: Cast to ObjectId failed for value "qhxEw4LnuAlFLtM7ziWF" (type string) at path "_id" for model "productos"
+    at model.Query.exec (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:4884:21)
+    at Query.then (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:4983:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  messageFormat: undefined,
+  stringValue: '"qhxEw4LnuAlFLtM7ziWF"',
+  kind: 'ObjectId',
+  value: 'qhxEw4LnuAlFLtM7ziWF',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at SchemaType.applySetters (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1201:12)
+      at SchemaType._castForQuery (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1648:15)
+      at SchemaType.castForQuery (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1636:15)
+      at SchemaType.castForQueryWrapper (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\cast.js:347:32)
+      at Query.cast (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:5312:12),
+  valueType: 'string'
+}
+[2022-12-11T22:35:13.653] [ERROR] default - CastError: Cast to ObjectId failed for value "favicon.ico" (type string) at path "_id" for model "productos"
+    at model.Query.exec (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:4884:21)
+    at Query.then (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:4983:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  messageFormat: undefined,
+  stringValue: '"favicon.ico"',
+  kind: 'ObjectId',
+  value: 'favicon.ico',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at SchemaType.applySetters (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1201:12)
+      at SchemaType._castForQuery (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1648:15)
+      at SchemaType.castForQuery (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1636:15)
+      at SchemaType.castForQueryWrapper (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\cast.js:347:32)
+      at Query.cast (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:5312:12),
+  valueType: 'string'
+}
+[2022-12-11T22:36:06.835] [WARN] default - Ruta desconocida { ruta: { '0': '/add/images/cart.png' } }
+[2022-12-11T22:47:47.118] [ERROR] default - CastError: Cast to string failed for value "{ id: 'favicon.ico' }" (type Object) at path "id" for model "productos"
+    at model.Query.exec (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:4884:21)
+    at Query.then (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:4983:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  messageFormat: undefined,
+  stringValue: `"{ id: 'favicon.ico' }"`,
+  kind: 'string',
+  value: { id: 'favicon.ico' },
+  path: 'id',
+  reason: null,
+  valueType: 'Object'
+}
+[2022-12-11T22:47:48.156] [ERROR] default - CastError: Cast to string failed for value "{ id: 'qhxEw4LnuAlFLtM7ziWF' }" (type Object) at path "id" for model "productos"
+    at model.Query.exec (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:4884:21)
+    at Query.then (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:4983:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  messageFormat: undefined,
+  stringValue: `"{ id: 'qhxEw4LnuAlFLtM7ziWF' }"`,
+  kind: 'string',
+  value: { id: 'qhxEw4LnuAlFLtM7ziWF' },
+  path: 'id',
+  reason: null,
+  valueType: 'Object'
+}
+[2022-12-11T22:47:54.867] [ERROR] default - CastError: Cast to string failed for value "{ id: 'qhxEw4LnuAlFLtM7ziWF' }" (type Object) at path "id" for model "productos"
+    at model.Query.exec (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:4884:21)
+    at Query.then (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:4983:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  messageFormat: undefined,
+  stringValue: `"{ id: 'qhxEw4LnuAlFLtM7ziWF' }"`,
+  kind: 'string',
+  value: { id: 'qhxEw4LnuAlFLtM7ziWF' },
+  path: 'id',
+  reason: null,
+  valueType: 'Object'
+}
+[2022-12-11T22:48:27.933] [ERROR] default - CastError: Cast to string failed for value "{ id: 'qhxEw4LnuAlFLtM7ziWF' }" (type Object) at path "id" for model "productos"
+    at model.Query.exec (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:4884:21)
+    at Query.then (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:4983:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  messageFormat: undefined,
+  stringValue: `"{ id: 'qhxEw4LnuAlFLtM7ziWF' }"`,
+  kind: 'string',
+  value: { id: 'qhxEw4LnuAlFLtM7ziWF' },
+  path: 'id',
+  reason: null,
+  valueType: 'Object'
+}
+[2022-12-11T22:48:28.914] [ERROR] default - CastError: Cast to string failed for value "{ id: 'favicon.ico' }" (type Object) at path "id" for model "productos"
+    at model.Query.exec (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:4884:21)
+    at Query.then (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:4983:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  messageFormat: undefined,
+  stringValue: `"{ id: 'favicon.ico' }"`,
+  kind: 'string',
+  value: { id: 'favicon.ico' },
+  path: 'id',
+  reason: null,
+  valueType: 'Object'
+}
+[2022-12-11T22:48:36.132] [ERROR] default - CastError: Cast to string failed for value "{ id: 'favicon.ico' }" (type Object) at path "id" for model "productos"
+    at model.Query.exec (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:4884:21)
+    at Query.then (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:4983:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  messageFormat: undefined,
+  stringValue: `"{ id: 'favicon.ico' }"`,
+  kind: 'string',
+  value: { id: 'favicon.ico' },
+  path: 'id',
+  reason: null,
+  valueType: 'Object'
+}
+[2022-12-11T22:48:36.896] [ERROR] default - CastError: Cast to string failed for value "{ id: 'qhxEw4LnuAlFLtM7ziWF' }" (type Object) at path "id" for model "productos"
+    at model.Query.exec (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:4884:21)
+    at Query.then (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:4983:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  messageFormat: undefined,
+  stringValue: `"{ id: 'qhxEw4LnuAlFLtM7ziWF' }"`,
+  kind: 'string',
+  value: { id: 'qhxEw4LnuAlFLtM7ziWF' },
+  path: 'id',
+  reason: null,
+  valueType: 'Object'
+}
+[2022-12-11T22:57:18.681] [ERROR] default - CastError: Cast to ObjectId failed for value "favicon.ico" (type string) at path "_id" for model "productos"
+    at model.Query.exec (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:4884:21)
+    at Query.then (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:4983:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  messageFormat: undefined,
+  stringValue: '"favicon.ico"',
+  kind: 'ObjectId',
+  value: 'favicon.ico',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at SchemaType.applySetters (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1201:12)
+      at SchemaType._castForQuery (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1648:15)
+      at SchemaType.castForQuery (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1636:15)
+      at SchemaType.castForQueryWrapper (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\cast.js:347:32)
+      at Query.cast (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:5312:12),
+  valueType: 'string'
+}
+[2022-12-11T22:57:41.907] [ERROR] default - CastError: Cast to ObjectId failed for value "favicon.ico" (type string) at path "_id" for model "productos"
+    at model.Query.exec (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:4884:21)
+    at Query.then (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:4983:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  messageFormat: undefined,
+  stringValue: '"favicon.ico"',
+  kind: 'ObjectId',
+  value: 'favicon.ico',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at SchemaType.applySetters (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1201:12)
+      at SchemaType._castForQuery (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1648:15)
+      at SchemaType.castForQuery (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1636:15)
+      at SchemaType.castForQueryWrapper (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\cast.js:347:32)
+      at Query.cast (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:5312:12),
+  valueType: 'string'
+}
+[2022-12-11T22:57:44.360] [ERROR] default - CastError: Cast to ObjectId failed for value "favicon.ico" (type string) at path "_id" for model "productos"
+    at model.Query.exec (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:4884:21)
+    at Query.then (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:4983:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  messageFormat: undefined,
+  stringValue: '"favicon.ico"',
+  kind: 'ObjectId',
+  value: 'favicon.ico',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at SchemaType.applySetters (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1201:12)
+      at SchemaType._castForQuery (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1648:15)
+      at SchemaType.castForQuery (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1636:15)
+      at SchemaType.castForQueryWrapper (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\cast.js:347:32)
+      at Query.cast (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:5312:12),
+  valueType: 'string'
+}
+[2022-12-11T22:58:07.309] [ERROR] default - CastError: Cast to ObjectId failed for value "favicon.ico" (type string) at path "_id" for model "productos"
+    at model.Query.exec (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:4884:21)
+    at Query.then (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:4983:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  messageFormat: undefined,
+  stringValue: '"favicon.ico"',
+  kind: 'ObjectId',
+  value: 'favicon.ico',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at SchemaType.applySetters (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1201:12)
+      at SchemaType._castForQuery (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1648:15)
+      at SchemaType.castForQuery (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1636:15)
+      at SchemaType.castForQueryWrapper (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\cast.js:347:32)
+      at Query.cast (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:5312:12),
+  valueType: 'string'
+}
+[2022-12-11T22:58:29.215] [ERROR] default - CastError: Cast to ObjectId failed for value "favicon.ico" (type string) at path "_id" for model "productos"
+    at model.Query.exec (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:4884:21)
+    at Query.then (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:4983:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  messageFormat: undefined,
+  stringValue: '"favicon.ico"',
+  kind: 'ObjectId',
+  value: 'favicon.ico',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at SchemaType.applySetters (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1201:12)
+      at SchemaType._castForQuery (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1648:15)
+      at SchemaType.castForQuery (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1636:15)
+      at SchemaType.castForQueryWrapper (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\cast.js:347:32)
+      at Query.cast (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:5312:12),
+  valueType: 'string'
+}
+[2022-12-11T23:06:08.864] [ERROR] default - CastError: Cast to ObjectId failed for value "favicon.ico" (type string) at path "_id" for model "productos"
+    at model.Query.exec (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:4884:21)
+    at Query.then (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:4983:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  messageFormat: undefined,
+  stringValue: '"favicon.ico"',
+  kind: 'ObjectId',
+  value: 'favicon.ico',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at SchemaType.applySetters (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1201:12)
+      at SchemaType._castForQuery (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1648:15)
+      at SchemaType.castForQuery (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1636:15)
+      at SchemaType.castForQueryWrapper (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\cast.js:347:32)
+      at Query.cast (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:5312:12),
+  valueType: 'string'
+}
+[2022-12-11T23:06:26.160] [ERROR] default - CastError: Cast to ObjectId failed for value "qhxEw4LnuAlFLtM7ziWF" (type string) at path "_id" for model "productos"
+    at model.Query.exec (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:4884:21)
+    at Query.then (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:4983:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  messageFormat: undefined,
+  stringValue: '"qhxEw4LnuAlFLtM7ziWF"',
+  kind: 'ObjectId',
+  value: 'qhxEw4LnuAlFLtM7ziWF',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at SchemaType.applySetters (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1201:12)
+      at SchemaType._castForQuery (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1648:15)
+      at SchemaType.castForQuery (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1636:15)
+      at SchemaType.castForQueryWrapper (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\cast.js:347:32)
+      at Query.cast (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:5312:12),
+  valueType: 'string'
+}
+[2022-12-11T23:06:47.423] [ERROR] default - CastError: Cast to ObjectId failed for value "favicon.ico" (type string) at path "_id" for model "productos"
+    at model.Query.exec (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:4884:21)
+    at Query.then (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:4983:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  messageFormat: undefined,
+  stringValue: '"favicon.ico"',
+  kind: 'ObjectId',
+  value: 'favicon.ico',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at SchemaType.applySetters (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1201:12)
+      at SchemaType._castForQuery (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1648:15)
+      at SchemaType.castForQuery (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1636:15)
+      at SchemaType.castForQueryWrapper (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\cast.js:347:32)
+      at Query.cast (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:5312:12),
+  valueType: 'string'
+}
+[2022-12-11T23:08:01.330] [ERROR] default - CastError: Cast to ObjectId failed for value "favicon.ico" (type string) at path "_id" for model "productos"
+    at model.Query.exec (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:4884:21)
+    at Query.then (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:4983:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  messageFormat: undefined,
+  stringValue: '"favicon.ico"',
+  kind: 'ObjectId',
+  value: 'favicon.ico',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at SchemaType.applySetters (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1201:12)
+      at SchemaType._castForQuery (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1648:15)
+      at SchemaType.castForQuery (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1636:15)
+      at SchemaType.castForQueryWrapper (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\cast.js:347:32)
+      at Query.cast (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:5312:12),
+  valueType: 'string'
+}
+[2022-12-11T23:10:18.035] [ERROR] default - CastError: Cast to ObjectId failed for value "qhxEw4LnuAlFLtM7ziWF" (type string) at path "_id" for model "productos"
+    at model.Query.exec (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:4884:21)
+    at Query.then (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:4983:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  messageFormat: undefined,
+  stringValue: '"qhxEw4LnuAlFLtM7ziWF"',
+  kind: 'ObjectId',
+  value: 'qhxEw4LnuAlFLtM7ziWF',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at SchemaType.applySetters (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1201:12)
+      at SchemaType._castForQuery (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1648:15)
+      at SchemaType.castForQuery (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1636:15)
+      at SchemaType.castForQueryWrapper (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\cast.js:347:32)
+      at Query.cast (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:5312:12),
+  valueType: 'string'
+}
+[2022-12-11T23:14:59.118] [ERROR] default - TypeError: Cannot read properties of null (reading 'name')
+    at productID (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/controllers/page.controller.js:93:50)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2022-12-11T23:14:59.426] [ERROR] default - TypeError: Cannot read properties of null (reading 'name')
+    at productID (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/controllers/page.controller.js:93:50)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)

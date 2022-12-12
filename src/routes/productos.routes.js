@@ -1,5 +1,6 @@
 import express from 'express'
-import { productosDao } from '../index.js';
+import { productosDao } from '../utils/index.js';
+import logger from '../config/logger.config.js';
 const routerProductos = express.Router();
 //----------------------------------------------------------------------------------------------
 //---------------------------------------DATA BASE----------------------------------------------
@@ -15,7 +16,7 @@ routerProductos.get('/',async ( req , res )=>{
     try {
         res.status(200).json(await productosDao.listarTodo());
     } catch (error) {
-        console.log(error)
+        logger.error(error)
     }
 });
 
@@ -25,7 +26,7 @@ routerProductos.get( '/:id' , [ usuario ] , async ( req , res )=>{
         let productId = await productosDao.listar(id);
         res.status(200).json(productId);    
     } catch (error) {
-        console.log(error)
+        logger.error(error)
     }
 });
 
@@ -35,7 +36,7 @@ routerProductos.post('/', [usuario] ,async ( req , res )=>{
         let productoNuevo = await productosDao.guardar( objeto );
         res.status(201).json({msg: "Producto agregado", data: productoNuevo , id: productoNuevo.id });
     } catch (error) {
-        console.log(error)
+        logger.error(error)
     }
 });
 
@@ -46,7 +47,7 @@ routerProductos.put('/:id', [usuario] ,async ( req , res )=>{
         let productId = await productosDao.actualizar( id , body )
         res.status(201).json({ msg: "Producto modificado" , data : productId , id : id });
     } catch (error) {
-        console.log(error)
+        logger.error(error)
     }
 });
 
@@ -56,7 +57,7 @@ routerProductos.delete('/:id', [usuario] ,async ( req , res )=>{
         let productId = await productosDao.eliminar( id );
         res.status(202).json( { "producto eliminado": productId } );  
     } catch (error) {
-        console.log(error)
+        logger.error(error)
     }
 });
 

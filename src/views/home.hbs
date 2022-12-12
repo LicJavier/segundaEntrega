@@ -5,7 +5,7 @@
         <div>
             <img class="max-h-40" src={{userAvatar}} alt="avatar">
             <span> {{usuario}}</span>
-            <button onclick="location.href = '/deslogueo'"> || Desloguearse</button>
+            <button onclick="location.href ='/deslogueo'"> || Desloguearse</button>
         </div>
     </nav>
     <main class="flex flex-col  items-center bg-cyan-500  m-0">
@@ -21,10 +21,10 @@
                 {{#each producto}}
                 <tbody>
                     <tr>
-                        <td class="p-5 font-mono text-3xl">{{this.nombre.name}}</td>
-                        <td class="p-5 font-mono text-3xl">$ {{this.nombre.price}}</td>
-                        <td class="p-5 font-mono text-3xl"><img class="max-h-60" src={{this.nombre.img}} alt="logo producto"></td>
-                        <td class="p-5 font-mono text-3xl"> <button  class="text-white bg-black" onclick="location.href=`/{{this.id}}`">ver producto</button></td>
+                        <td class="p-5 font-mono text-3xl">{{this.name}}</td>
+                        <td class="p-5 font-mono text-3xl">$ {{this.price}}</td>
+                        <td class="p-5 font-mono text-3xl"><img class="max-h-60" src={{this.img}} alt="logo producto"></td>
+                        <td class="p-5 font-mono text-3xl"> <button  class="text-white bg-black" onclick="location.href=`/{{this.id2}}`">ver producto</button></td>
                     </tr>
                 </tbody>
                 {{/each}}

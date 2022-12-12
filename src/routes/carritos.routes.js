@@ -1,6 +1,6 @@
 import express from 'express'
-import { carritosDao } from '../index.js';
-import logger from '../utils/logger.config.js';
+import { carritosDao } from '../utils/index.js';
+import logger from '../config/logger.config.js';
 const routerCarrito = express.Router();
 
 const administrador = true;

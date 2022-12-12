@@ -1,6 +1,6 @@
 import express from 'express'
 import { fork } from 'child_process';
-import logger from "../utils/logger.config.js";
+import logger from "../config/logger.config.js";
 // const child = fork('./src/utils/child.js')
 const routerRandoms = express.Router();
 
