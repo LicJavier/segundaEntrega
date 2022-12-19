@@ -16,20 +16,24 @@ import routerCarrito from './src/routes/carritos.routes.js';
 import process from 'process';
 import routerRandoms from './src/routes/random.routes.js';
 import logger from './src/config/logger.config.js';
-// import cartAdminMessage from './src/utils/nodemailerAdmin.js';
-// import cartUserMessage from './src/utils/nodemailerUser.js';
+import cartAdminMessage from './src/utils/nodemailerAdmin.js';
+import cartUserMessage from './src/utils/nodemailerUser.js';
 import whatsappMsj from './src/utils/twilio.js';
 import routerPage from './src/routes/api.routes.js';
 // import MensajesDaoFirebase from './src/models/daos/mensajes/mensajesDaoFirebase.js';
 import UsuarioDaoMongoDb from './src/models/daos/usuariosDaoMongoDb.js';
-
+import { usermail, username } from './src/controllers/page.controller.js';
 export const usuarioDao = new UsuarioDaoMongoDb;
+import { carritosDao } from './src/controllers/page.controller.js';
 // const mensajesDao = new MensajesDaoFirebase;
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 // moment.locale('es');
 // const hoy = moment();
 dotenv.config();
+const options ={ alias : { p : 'puerto' , g : 'gestor' , m : 'metodo' } , default : { p : 8080 , g : 'FORK' , m : "mongodb" } }
+const mini = minimist( process.argv.slice(2) , options );
+export const METODO = mini.m;
 export let DB_MENSAJES = [];
 //----------------------------------------------------------------------------------------------
 //-------------------------INSTANCIA DE SERVER--------------------------------------------------
@@ -73,6 +77,7 @@ app.use(session({
 import {Strategy} from 'passport-local';
 import passport from 'passport';
 import bcrypt from 'bcrypt';
+import minimist from 'minimist';
 const LocalStrategy = Strategy;
 app.use(passport.initialize());
 app.use(passport.session());
@@ -163,6 +168,7 @@ io.on('connection', async (socket)=>{
         const nombre = username;
         const email = usermail;
         whatsappMsj( nombre , email )
+        carritosDao.eliminarTodo();
     })
     // socket.on( 'from-cliente-msj' , async ( data ) => {
     //     const newData = { ...data , hora: `${hoy.format( 'Do MMMM YYYY, h:mm:ss a' ) }` };
@@ -171,13 +177,14 @@ io.on('connection', async (socket)=>{
     // })
 }
 )
-
 // io.sockets.emit('los mensajes', await mensajesDao.listarTodoNormalizado());
 
 io.sockets.on( 'nueva-compra' , async (data) =>{
-    const { nombre , email } = user;
-    // const admin = process.env.ACCOUNT_MAIL;
-    // cartAdminMessage( admin , data , nombre , email );
-    // cartUserMessage( email );
+    const nombre = username;
+    const email = usermail;
+    const admin = process.env.ACCOUNT_MAIL;
+    cartAdminMessage( admin , data , nombre , email );
+    cartUserMessage( email );
     await whatsappMsj( nombre , email );
+    carritosDao.eliminarTodo();
 })

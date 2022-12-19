@@ -2,9 +2,10 @@ import { generateHashPassword, usuarioDao } from "../../server.js";
 import logger from "../config/logger.config.js"
 import message from "../utils/nodemailer.js";
 import CarritosDaoMemoria from "../models/daos/carritos/carritosDaoMemoria.js";
-import ProductosDaoMongoDb from "../models/daos/productos/productosDaoMongoDb.js";
-const productosDao = new ProductosDaoMongoDb;
-const carritosDao = new CarritosDaoMemoria;
+import { productosDao } from "../utils/index.js";
+import ProductoFactory from "../classes/productos.factory.js";
+export const carritosDao = new CarritosDaoMemoria;
+const productFactory = new ProductoFactory(productosDao);
 //----------------------------------------------------------------------------------------------
 //---------------------------------CONTROLLERS--------------------------------------------------
 //----------------------------------------------------------------------------------------------
@@ -22,17 +23,17 @@ export async function registro( req , res ) {
         logger.error(error);
     }
 }
-let username = [];
-let usermail = [];
+export let username = [];
+export let usermail = [];
 export async function home( req , res ) {
     try {
         username = req.user.nombre;
-    usermail = req.user.email;
-    const usuario = req.user.email;
-    const userAvatar = req.user.avatar;
-    const producto = await productosDao.listarTodo();
-    logger.info(producto);
-    res.render('home', { usuario , producto  , userAvatar });
+        usermail = req.user.email;
+        const usuario = usermail;
+        const userAvatar = req.user.avatar;
+        const productos = await productFactory.listarTodo();
+        logger.info(productos)
+    res.render('home', { usuario , productos , userAvatar });
     } catch (error) {
         logger.error(error);
     }
@@ -56,9 +57,10 @@ export async function errorRegister( req , res ){
 export async function cart( req , res ){
     try {
         const usuario = req.user.email;
+        const avatar = req.user.avatar;
         const carrito = await carritosDao.listarTodo()
         logger.info(carrito)
-        res.render('cart', { usuario , carrito });
+        res.render('cart', { usuario , carrito , avatar });
     } catch (error) {
         logger.error(error);
     }
@@ -85,11 +87,12 @@ export async function deslogueo( req , res ){
 export let productId = [];
 export async function productID( req , res) {
     try {        
+        const userAvatar = req.user.avatar;
+        const usuario = req.user.email;
         let id = req.params.id;
         logger.info("este ID: " , id)
-        productId = await productosDao.listarProducto(id);
-        logger.info("este producto:" , productId);
-        res.render( 'product' , { productId , id })   
+        productId = await productFactory.listar(id);
+        res.render( 'product' , { productId , userAvatar , usuario })   
     } catch (error) {
         logger.error(error)
     }
@@ -129,12 +132,12 @@ export async function register( req , res ) {
         logger.error(error);
     }
 }
-
+let carrito = [];
 export async function guardarProducto( req , res , next ) {
     const id = req.params.id;
-    logger.info(id)
-    const product = await productosDao.listarProducto(id);
-    logger.info(product);
-    const carrito = await carritosDao.guardar(product);
+    logger.info("el id ", id)
+    const product = await productFactory.listar(id);
+    logger.info("el producto ", product);
+    carrito = await carritosDao.guardar(product);
     next()
 }

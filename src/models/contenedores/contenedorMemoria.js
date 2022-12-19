@@ -1,4 +1,4 @@
-
+let instance = null ;
 export default class ContenedorMemoria{
     constructor ( DB ){
         this.DB = DB;
@@ -46,5 +46,12 @@ export default class ContenedorMemoria{
         const eliminable = await this.DB.findIndex( e => e.id == id );
         this.DB.splice( eliminable , 1 );
         return eliminable;
+    }
+    static getInstance() {
+        if (!instance) {
+            instance = new MongoDBClient()
+        }
+
+        return instance;
     }
 }

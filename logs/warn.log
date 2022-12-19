@@ -654,3 +654,759 @@
 [2022-12-11T23:14:59.426] [ERROR] default - TypeError: Cannot read properties of null (reading 'name')
     at productID (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/controllers/page.controller.js:93:50)
     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2022-12-16T11:16:15.262] [ERROR] default - ReferenceError: id2 is not defined
+    at ProductosDaoMongoDb.listarProducto (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/models/daos/productos/productosDaoMongoDb.js:12:51)
+    at productID (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/controllers/page.controller.js:90:40)
+    at Layer.handle [as handle_request] (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\route.js:144:13)
+    at auth (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/server.js:121:16)
+    at Layer.handle [as handle_request] (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\index.js:284:15
+[2022-12-16T11:16:15.395] [ERROR] default - ReferenceError: id2 is not defined
+    at ProductosDaoMongoDb.listarProducto (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/models/daos/productos/productosDaoMongoDb.js:12:51)
+    at productID (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/controllers/page.controller.js:90:40)
+    at Layer.handle [as handle_request] (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\route.js:144:13)
+    at auth (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/server.js:121:16)
+    at Layer.handle [as handle_request] (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\index.js:284:15
+[2022-12-16T11:16:15.695] [ERROR] default - ReferenceError: id2 is not defined
+    at ProductosDaoMongoDb.listarProducto (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/models/daos/productos/productosDaoMongoDb.js:12:51)
+    at productID (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/controllers/page.controller.js:90:40)
+    at Layer.handle [as handle_request] (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\route.js:144:13)
+    at auth (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/server.js:121:16)
+    at Layer.handle [as handle_request] (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\index.js:284:15
+[2022-12-16T11:16:48.629] [ERROR] default - ReferenceError: id2 is not defined
+    at ProductosDaoMongoDb.listarProducto (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/models/daos/productos/productosDaoMongoDb.js:12:57)
+    at productID (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/controllers/page.controller.js:90:40)
+    at Layer.handle [as handle_request] (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\route.js:144:13)
+    at auth (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/server.js:121:16)
+    at Layer.handle [as handle_request] (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\index.js:284:15
+[2022-12-16T11:16:48.758] [ERROR] default - ReferenceError: id2 is not defined
+    at ProductosDaoMongoDb.listarProducto (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/models/daos/productos/productosDaoMongoDb.js:12:57)
+    at productID (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/controllers/page.controller.js:90:40)
+    at Layer.handle [as handle_request] (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\route.js:144:13)
+    at auth (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/server.js:121:16)
+    at Layer.handle [as handle_request] (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\index.js:284:15
+[2022-12-16T11:16:49.064] [ERROR] default - ReferenceError: id2 is not defined
+    at ProductosDaoMongoDb.listarProducto (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/models/daos/productos/productosDaoMongoDb.js:12:57)
+    at productID (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/controllers/page.controller.js:90:40)
+    at Layer.handle [as handle_request] (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\route.js:144:13)
+    at auth (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/server.js:121:16)
+    at Layer.handle [as handle_request] (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\index.js:284:15
+[2022-12-16T11:17:49.891] [ERROR] default - ReferenceError: id2 is not defined
+    at ProductosDaoMongoDb.listarProducto (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/models/daos/productos/productosDaoMongoDb.js:12:57)
+    at productID (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/controllers/page.controller.js:90:40)
+    at Layer.handle [as handle_request] (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\route.js:144:13)
+    at auth (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/server.js:121:16)
+    at Layer.handle [as handle_request] (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\index.js:284:15
+[2022-12-16T11:17:50.041] [ERROR] default - ReferenceError: id2 is not defined
+    at ProductosDaoMongoDb.listarProducto (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/models/daos/productos/productosDaoMongoDb.js:12:57)
+    at productID (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/controllers/page.controller.js:90:40)
+    at Layer.handle [as handle_request] (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\route.js:144:13)
+    at auth (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/server.js:121:16)
+    at Layer.handle [as handle_request] (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\index.js:284:15
+[2022-12-16T11:17:50.335] [ERROR] default - ReferenceError: id2 is not defined
+    at ProductosDaoMongoDb.listarProducto (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/models/daos/productos/productosDaoMongoDb.js:12:57)
+    at productID (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/controllers/page.controller.js:90:40)
+    at Layer.handle [as handle_request] (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\route.js:144:13)
+    at auth (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/server.js:121:16)
+    at Layer.handle [as handle_request] (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\index.js:284:15
+[2022-12-17T17:46:06.168] [ERROR] default - TypeError: Cannot read properties of undefined (reading 'find')
+    at ProductosDaoMongoDb.listarProducto (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/models/daos/productos/productosDaoMongoDb.js:12:41)
+    at productID (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/controllers/page.controller.js:90:40)
+    at Layer.handle [as handle_request] (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\route.js:144:13)
+    at auth (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/server.js:121:16)
+    at Layer.handle [as handle_request] (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\index.js:284:15
+[2022-12-17T17:46:06.301] [ERROR] default - TypeError: Cannot read properties of undefined (reading 'find')
+    at ProductosDaoMongoDb.listarProducto (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/models/daos/productos/productosDaoMongoDb.js:12:41)
+    at productID (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/controllers/page.controller.js:90:40)
+    at Layer.handle [as handle_request] (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\route.js:144:13)
+    at auth (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/server.js:121:16)
+    at Layer.handle [as handle_request] (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\index.js:284:15
+[2022-12-17T17:46:06.581] [ERROR] default - TypeError: Cannot read properties of undefined (reading 'find')
+    at ProductosDaoMongoDb.listarProducto (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/models/daos/productos/productosDaoMongoDb.js:12:41)
+    at productID (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/controllers/page.controller.js:90:40)
+    at Layer.handle [as handle_request] (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\route.js:144:13)
+    at auth (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/server.js:121:16)
+    at Layer.handle [as handle_request] (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\index.js:284:15
+[2022-12-18T21:34:17.283] [ERROR] default - TypeError: Cannot read properties of undefined (reading 'name')
+    at new ProductoDto (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/classes/productos.dtos.js:3:30)
+    at home (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/controllers/page.controller.js:31:29)
+    at Layer.handle [as handle_request] (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\route.js:144:13)
+    at auth (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/server.js:121:16)
+    at Layer.handle [as handle_request] (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\index.js:284:15
+[2022-12-18T21:44:00.383] [ERROR] default - TypeError: Cannot read properties of undefined (reading 'name')
+    at new ProductoDto (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/classes/productos.dtos.js:3:30)
+    at home (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/controllers/page.controller.js:31:29)
+    at Layer.handle [as handle_request] (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\route.js:144:13)
+    at auth (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/server.js:121:16)
+    at Layer.handle [as handle_request] (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express\lib\router\index.js:284:15
+[2022-12-18T21:48:14.705] [ERROR] default - TypeError: producto._id is not a function
+    at new ProductoDto (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/classes/productos.dtos.js:8:28)
+    at file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/controllers/page.controller.js:38:25
+    at Array.map (<anonymous>)
+    at home (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/controllers/page.controller.js:37:37)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2022-12-18T22:07:33.830] [ERROR] default - ReferenceError: CustomError is not defined
+    at ProductosDaoMongoDb.listar (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/models/contenedores/contenedorMongoDb.js:24:32)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async productID (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/controllers/page.controller.js:96:21)
+[2022-12-18T22:07:34.302] [ERROR] default - MongoNotConnectedError: Client must be connected before running operations
+    at C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\operations\execute_operation.js:20:33
+    at maybePromise (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\utils.js:357:5)
+    at executeOperation (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\operations\execute_operation.js:16:37)
+    at FindCursor._initialize (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\find_cursor.js:54:50)
+    at [kInit] (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:428:14)
+    at next (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:499:22)
+    at fetchDocs (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:256:17)
+    at C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:273:13
+    at maybePromise (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\utils.js:357:5)
+    at FindCursor.toArray (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:251:41) {
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2022-12-18T22:07:34.446] [WARN] default - Ruta desconocida { ruta: { '0': '/add/images/cart.png' } }
+[2022-12-18T22:07:34.715] [ERROR] default - MongoNotConnectedError: Client must be connected before running operations
+    at C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\operations\execute_operation.js:20:33
+    at maybePromise (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\utils.js:357:5)
+    at executeOperation (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\operations\execute_operation.js:16:37)
+    at FindCursor._initialize (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\find_cursor.js:54:50)
+    at [kInit] (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:428:14)
+    at next (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:499:22)
+    at fetchDocs (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:256:17)
+    at C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:273:13
+    at maybePromise (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\utils.js:357:5)
+    at FindCursor.toArray (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:251:41) {
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2022-12-18T22:07:41.940] [ERROR] default - ReferenceError: CustomError is not defined
+    at ProductosDaoMongoDb.listar (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/models/contenedores/contenedorMongoDb.js:24:32)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async productID (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/controllers/page.controller.js:96:21)
+[2022-12-18T22:07:48.019] [ERROR] default - ReferenceError: CustomError is not defined
+    at ProductosDaoMongoDb.listar (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/models/contenedores/contenedorMongoDb.js:24:32)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async productID (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/controllers/page.controller.js:96:21)
+[2022-12-18T22:09:38.902] [ERROR] default - NewError {
+  codigo: 500,
+  descripcion: 'Error al listar()',
+  detalle: SyntaxError: Unexpected token u in JSON at position 0
+      at JSON.parse (<anonymous>)
+      at asPOJO (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/utils/object.js:1:35)
+      at ProductosDaoMongoDb.listar (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/models/contenedores/contenedorMongoDb.js:22:44)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async productID (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/controllers/page.controller.js:96:21)
+}
+[2022-12-18T22:12:20.380] [ERROR] default - MongoNotConnectedError: Client must be connected before running operations
+    at C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\operations\execute_operation.js:20:33
+    at maybePromise (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\utils.js:357:5)
+    at executeOperation (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\operations\execute_operation.js:16:37)
+    at FindCursor._initialize (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\find_cursor.js:54:50)
+    at [kInit] (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:428:14)
+    at next (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:499:22)
+    at fetchDocs (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:256:17)
+    at C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:273:13
+    at maybePromise (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\utils.js:357:5)
+    at FindCursor.toArray (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:251:41) {
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2022-12-18T22:12:20.695] [WARN] default - Ruta desconocida { ruta: { '0': '/add/images/cart.png' } }
+[2022-12-18T22:12:21.211] [ERROR] default - MongoNotConnectedError: Client must be connected before running operations
+    at C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\operations\execute_operation.js:20:33
+    at maybePromise (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\utils.js:357:5)
+    at executeOperation (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\operations\execute_operation.js:16:37)
+    at FindCursor._initialize (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\find_cursor.js:54:50)
+    at [kInit] (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:428:14)
+    at next (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:499:22)
+    at fetchDocs (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:256:17)
+    at C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:273:13
+    at maybePromise (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\utils.js:357:5)
+    at FindCursor.toArray (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:251:41) {
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2022-12-18T22:12:50.782] [ERROR] default - NewError {
+  codigo: 500,
+  descripcion: 'Error al listar()',
+  detalle: SyntaxError: Unexpected token u in JSON at position 0
+      at JSON.parse (<anonymous>)
+      at asPOJO (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/utils/object.js:1:35)
+      at ProductosDaoMongoDb.listar (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/models/contenedores/contenedorMongoDb.js:22:44)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async productID (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/controllers/page.controller.js:96:21)
+}
+[2022-12-18T22:14:17.621] [ERROR] default - NewError {
+  codigo: 500,
+  descripcion: 'Error al listar()',
+  detalle: CastError: Cast to ObjectId failed for value "alt="logo" (type string) at path "_id" for model "productos"
+      at model.Query.exec (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:4884:21)
+      at Query.then (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:4983:15)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+    messageFormat: undefined,
+    stringValue: '"alt="logo"',
+    kind: 'ObjectId',
+    value: 'alt="logo',
+    path: '_id',
+    reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+        at new BSONTypeError (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\bson\lib\error.js:41:28)
+        at new ObjectId (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\bson\lib\objectid.js:67:23)
+        at castObjectId (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\cast\objectid.js:25:12)
+        at ObjectId.cast (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schema\objectid.js:246:12)
+        at SchemaType.applySetters (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1201:12)
+        at SchemaType._castForQuery (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1648:15)
+        at SchemaType.castForQuery (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1636:15)
+        at SchemaType.castForQueryWrapper (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1612:20)
+        at cast (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\cast.js:347:32)
+        at Query.cast (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:5312:12),
+    valueType: 'string'
+  }
+}
+[2022-12-18T22:14:17.658] [ERROR] default - NewError {
+  codigo: 500,
+  descripcion: 'Error al listar()',
+  detalle: MongoExpiredSessionError: Cannot use a session that has ended
+      at applySession (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\sessions.js:664:16)
+      at Connection.command (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cmap\connection.js:271:53)
+      at C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\sdam\server.js:210:18
+      at Object.callback (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cmap\connection_pool.js:293:13)
+      at ConnectionPool.processWaitQueue (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cmap\connection_pool.js:435:33)
+      at C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cmap\connection_pool.js:189:37
+      at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+    [Symbol(errorLabels)]: Set(0) {}
+  }
+}
+[2022-12-18T22:15:07.754] [ERROR] default - NewError {
+  codigo: 500,
+  descripcion: 'Error al listar()',
+  detalle: SyntaxError: Unexpected token u in JSON at position 0
+      at JSON.parse (<anonymous>)
+      at asPOJO (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/utils/object.js:1:35)
+      at ProductosDaoMongoDb.listar (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/models/contenedores/contenedorMongoDb.js:22:44)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async productID (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/controllers/page.controller.js:96:21)
+}
+[2022-12-18T22:16:39.062] [ERROR] default - NewError {
+  codigo: 500,
+  descripcion: 'Error al listar()',
+  detalle: SyntaxError: Unexpected token u in JSON at position 0
+      at JSON.parse (<anonymous>)
+      at asPOJO (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/utils/object.js:1:35)
+      at ProductosDaoMongoDb.listar (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/models/contenedores/contenedorMongoDb.js:22:44)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async productID (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/controllers/page.controller.js:96:21)
+}
+[2022-12-18T22:16:39.580] [ERROR] default - MongoNotConnectedError: Client must be connected before running operations
+    at C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\operations\execute_operation.js:20:33
+    at maybePromise (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\utils.js:357:5)
+    at executeOperation (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\operations\execute_operation.js:16:37)
+    at FindCursor._initialize (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\find_cursor.js:54:50)
+    at [kInit] (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:428:14)
+    at next (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:499:22)
+    at fetchDocs (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:256:17)
+    at C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:273:13
+    at maybePromise (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\utils.js:357:5)
+    at FindCursor.toArray (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:251:41) {
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2022-12-18T22:16:39.710] [WARN] default - Ruta desconocida { ruta: { '0': '/add/images/cart.png' } }
+[2022-12-18T22:16:39.983] [ERROR] default - MongoNotConnectedError: Client must be connected before running operations
+    at C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\operations\execute_operation.js:20:33
+    at maybePromise (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\utils.js:357:5)
+    at executeOperation (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\operations\execute_operation.js:16:37)
+    at FindCursor._initialize (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\find_cursor.js:54:50)
+    at [kInit] (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:428:14)
+    at next (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:499:22)
+    at fetchDocs (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:256:17)
+    at C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:273:13
+    at maybePromise (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\utils.js:357:5)
+    at FindCursor.toArray (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:251:41) {
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2022-12-18T22:17:02.643] [ERROR] default - NewError {
+  codigo: 500,
+  descripcion: 'Error al listar()',
+  detalle: SyntaxError: Unexpected token u in JSON at position 0
+      at JSON.parse (<anonymous>)
+      at asPOJO (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/utils/object.js:1:35)
+      at ProductosDaoMongoDb.listar (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/models/contenedores/contenedorMongoDb.js:22:44)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async productID (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/controllers/page.controller.js:96:21)
+}
+[2022-12-18T22:18:43.404] [ERROR] default - NewError {
+  codigo: 500,
+  descripcion: 'Error al listar()',
+  detalle: CastError: Cast to ObjectId failed for value "alt="logo" (type string) at path "_id" for model "productos"
+      at model.Query.exec (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:4884:21)
+      at Query.then (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:4983:15)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+    messageFormat: undefined,
+    stringValue: '"alt="logo"',
+    kind: 'ObjectId',
+    value: 'alt="logo',
+    path: '_id',
+    reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+        at new BSONTypeError (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\bson\lib\error.js:41:28)
+        at new ObjectId (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\bson\lib\objectid.js:67:23)
+        at castObjectId (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\cast\objectid.js:25:12)
+        at ObjectId.cast (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schema\objectid.js:246:12)
+        at SchemaType.applySetters (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1201:12)
+        at SchemaType._castForQuery (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1648:15)
+        at SchemaType.castForQuery (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1636:15)
+        at SchemaType.castForQueryWrapper (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1612:20)
+        at cast (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\cast.js:347:32)
+        at Query.cast (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:5312:12),
+    valueType: 'string'
+  }
+}
+[2022-12-18T22:18:43.450] [ERROR] default - NewError {
+  codigo: 500,
+  descripcion: 'Error al listar()',
+  detalle: MongoExpiredSessionError: Cannot use a session that has ended
+      at applySession (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\sessions.js:664:16)
+      at Connection.command (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cmap\connection.js:271:53)
+      at C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\sdam\server.js:210:18
+      at Object.callback (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cmap\connection_pool.js:293:13)
+      at ConnectionPool.processWaitQueue (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cmap\connection_pool.js:435:33)
+      at C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cmap\connection_pool.js:189:37
+      at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+    [Symbol(errorLabels)]: Set(0) {}
+  }
+}
+[2022-12-18T22:19:05.166] [ERROR] default - NewError {
+  codigo: 500,
+  descripcion: 'Error al listar()',
+  detalle: CastError: Cast to ObjectId failed for value "alt="logo" (type string) at path "_id" for model "productos"
+      at model.Query.exec (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:4884:21)
+      at Query.then (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:4983:15)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+    messageFormat: undefined,
+    stringValue: '"alt="logo"',
+    kind: 'ObjectId',
+    value: 'alt="logo',
+    path: '_id',
+    reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+        at new BSONTypeError (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\bson\lib\error.js:41:28)
+        at new ObjectId (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\bson\lib\objectid.js:67:23)
+        at castObjectId (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\cast\objectid.js:25:12)
+        at ObjectId.cast (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schema\objectid.js:246:12)
+        at SchemaType.applySetters (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1201:12)
+        at SchemaType._castForQuery (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1648:15)
+        at SchemaType.castForQuery (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1636:15)
+        at SchemaType.castForQueryWrapper (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1612:20)
+        at cast (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\cast.js:347:32)
+        at Query.cast (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:5312:12),
+    valueType: 'string'
+  }
+}
+[2022-12-18T22:19:05.209] [ERROR] default - NewError {
+  codigo: 500,
+  descripcion: 'Error al listar()',
+  detalle: MongoExpiredSessionError: Cannot use a session that has ended
+      at applySession (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\sessions.js:664:16)
+      at Connection.command (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cmap\connection.js:271:53)
+      at C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\sdam\server.js:210:18
+      at Object.callback (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cmap\connection_pool.js:293:13)
+      at ConnectionPool.processWaitQueue (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cmap\connection_pool.js:435:33)
+      at C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cmap\connection_pool.js:189:37
+      at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+    [Symbol(errorLabels)]: Set(0) {}
+  }
+}
+[2022-12-18T22:19:14.280] [ERROR] default - NewError {
+  codigo: 500,
+  descripcion: 'Error al listar()',
+  detalle: CastError: Cast to ObjectId failed for value "alt="logo" (type string) at path "_id" for model "productos"
+      at model.Query.exec (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:4884:21)
+      at Query.then (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:4983:15)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+    messageFormat: undefined,
+    stringValue: '"alt="logo"',
+    kind: 'ObjectId',
+    value: 'alt="logo',
+    path: '_id',
+    reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+        at new BSONTypeError (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\bson\lib\error.js:41:28)
+        at new ObjectId (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\bson\lib\objectid.js:67:23)
+        at castObjectId (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\cast\objectid.js:25:12)
+        at ObjectId.cast (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schema\objectid.js:246:12)
+        at SchemaType.applySetters (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1201:12)
+        at SchemaType._castForQuery (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1648:15)
+        at SchemaType.castForQuery (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1636:15)
+        at SchemaType.castForQueryWrapper (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1612:20)
+        at cast (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\cast.js:347:32)
+        at Query.cast (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:5312:12),
+    valueType: 'string'
+  }
+}
+[2022-12-18T22:19:14.483] [ERROR] default - NewError {
+  codigo: 500,
+  descripcion: 'Error al listar()',
+  detalle: MongoExpiredSessionError: Cannot use a session that has ended
+      at applySession (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\sessions.js:664:16)
+      at Connection.command (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cmap\connection.js:271:53)
+      at C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\sdam\server.js:210:18
+      at Object.callback (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cmap\connection_pool.js:293:13)
+      at ConnectionPool.processWaitQueue (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cmap\connection_pool.js:435:33)
+      at C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cmap\connection_pool.js:189:37
+      at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+    [Symbol(errorLabels)]: Set(0) {}
+  }
+}
+[2022-12-18T22:19:40.994] [ERROR] default - NewError {
+  codigo: 500,
+  descripcion: 'Error al listar()',
+  detalle: SyntaxError: Unexpected token u in JSON at position 0
+      at JSON.parse (<anonymous>)
+      at asPOJO (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/utils/object.js:1:35)
+      at ProductosDaoMongoDb.listar (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/models/contenedores/contenedorMongoDb.js:22:44)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async productID (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/controllers/page.controller.js:96:21)
+}
+[2022-12-18T22:19:52.476] [ERROR] default - MongoNotConnectedError: Client must be connected before running operations
+    at C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\operations\execute_operation.js:20:33
+    at maybePromise (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\utils.js:357:5)
+    at executeOperation (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\operations\execute_operation.js:16:37)
+    at FindCursor._initialize (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\find_cursor.js:54:50)
+    at [kInit] (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:428:14)
+    at next (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:499:22)
+    at fetchDocs (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:256:17)
+    at C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:273:13
+    at maybePromise (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\utils.js:357:5)
+    at FindCursor.toArray (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:251:41) {
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2022-12-18T22:19:52.771] [WARN] default - Ruta desconocida { ruta: { '0': '/add/images/cart.png' } }
+[2022-12-18T22:19:53.045] [ERROR] default - MongoNotConnectedError: Client must be connected before running operations
+    at C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\operations\execute_operation.js:20:33
+    at maybePromise (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\utils.js:357:5)
+    at executeOperation (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\operations\execute_operation.js:16:37)
+    at FindCursor._initialize (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\find_cursor.js:54:50)
+    at [kInit] (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:428:14)
+    at next (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:499:22)
+    at fetchDocs (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:256:17)
+    at C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:273:13
+    at maybePromise (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\utils.js:357:5)
+    at FindCursor.toArray (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:251:41) {
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2022-12-18T22:21:52.700] [ERROR] default - NewError {
+  codigo: 500,
+  descripcion: 'Error al listar()',
+  detalle: SyntaxError: Unexpected token u in JSON at position 0
+      at JSON.parse (<anonymous>)
+      at asPOJO (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/utils/object.js:1:35)
+      at ProductosDaoMongoDb.listar (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/models/contenedores/contenedorMongoDb.js:22:44)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async productID (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/controllers/page.controller.js:96:21)
+}
+[2022-12-18T22:21:55.433] [ERROR] default - MongoNotConnectedError: Client must be connected before running operations
+    at C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\operations\execute_operation.js:20:33
+    at maybePromise (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\utils.js:357:5)
+    at executeOperation (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\operations\execute_operation.js:16:37)
+    at FindCursor._initialize (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\find_cursor.js:54:50)
+    at [kInit] (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:428:14)
+    at next (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:499:22)
+    at fetchDocs (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:256:17)
+    at C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:273:13
+    at maybePromise (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\utils.js:357:5)
+    at FindCursor.toArray (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:251:41) {
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2022-12-18T22:21:55.854] [WARN] default - Ruta desconocida { ruta: { '0': '/add/images/cart.png' } }
+[2022-12-18T22:21:56.850] [ERROR] default - MongoNotConnectedError: Client must be connected before running operations
+    at C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\operations\execute_operation.js:20:33
+    at maybePromise (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\utils.js:357:5)
+    at executeOperation (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\operations\execute_operation.js:16:37)
+    at FindCursor._initialize (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\find_cursor.js:54:50)
+    at [kInit] (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:428:14)
+    at next (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:499:22)
+    at fetchDocs (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:256:17)
+    at C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:273:13
+    at maybePromise (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\utils.js:357:5)
+    at FindCursor.toArray (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:251:41) {
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2022-12-18T22:46:20.054] [ERROR] default - NewError {
+  codigo: 500,
+  descripcion: 'Error al listar()',
+  detalle: SyntaxError: Unexpected token u in JSON at position 0
+      at JSON.parse (<anonymous>)
+      at asPOJO (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/utils/object.js:1:35)
+      at ProductosDaoMongoDb.listar (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/models/contenedores/contenedorMongoDb.js:22:44)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async productID (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/controllers/page.controller.js:96:21)
+}
+[2022-12-18T22:48:37.230] [ERROR] default - NewError {
+  codigo: 500,
+  descripcion: 'Error al listar()',
+  detalle: SyntaxError: Unexpected token u in JSON at position 0
+      at JSON.parse (<anonymous>)
+      at asPOJO (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/utils/object.js:1:35)
+      at ProductosDaoMongoDb.listar (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/models/contenedores/contenedorMongoDb.js:22:44)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async productID (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/controllers/page.controller.js:96:21)
+}
+[2022-12-18T22:48:42.030] [ERROR] default - MongoNotConnectedError: Client must be connected before running operations
+    at C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\operations\execute_operation.js:20:33
+    at maybePromise (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\utils.js:357:5)
+    at executeOperation (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\operations\execute_operation.js:16:37)
+    at FindCursor._initialize (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\find_cursor.js:54:50)
+    at [kInit] (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:428:14)
+    at next (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:499:22)
+    at fetchDocs (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:256:17)
+    at C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:273:13
+    at maybePromise (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\utils.js:357:5)
+    at FindCursor.toArray (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:251:41) {
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2022-12-18T22:48:42.365] [WARN] default - Ruta desconocida { ruta: { '0': '/add/images/cart.png' } }
+[2022-12-18T22:48:43.293] [ERROR] default - MongoNotConnectedError: Client must be connected before running operations
+    at C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\operations\execute_operation.js:20:33
+    at maybePromise (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\utils.js:357:5)
+    at executeOperation (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\operations\execute_operation.js:16:37)
+    at FindCursor._initialize (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\find_cursor.js:54:50)
+    at [kInit] (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:428:14)
+    at next (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:499:22)
+    at fetchDocs (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:256:17)
+    at C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:273:13
+    at maybePromise (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\utils.js:357:5)
+    at FindCursor.toArray (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:251:41) {
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2022-12-18T22:53:59.261] [ERROR] default - NewError {
+  codigo: 500,
+  descripcion: 'Error al listar()',
+  detalle: SyntaxError: Unexpected token u in JSON at position 0
+      at JSON.parse (<anonymous>)
+      at asPOJO (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/utils/object.js:1:35)
+      at ProductosDaoMongoDb.listar (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/models/contenedores/contenedorMongoDb.js:22:44)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async productID (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/controllers/page.controller.js:97:21)
+}
+[2022-12-18T22:54:16.778] [ERROR] default - MongoNotConnectedError: Client must be connected before running operations
+    at C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\operations\execute_operation.js:20:33
+    at maybePromise (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\utils.js:357:5)
+    at executeOperation (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\operations\execute_operation.js:16:37)
+    at FindCursor._initialize (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\find_cursor.js:54:50)
+    at [kInit] (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:428:14)
+    at next (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:499:22)
+    at fetchDocs (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:256:17)
+    at C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:273:13
+    at maybePromise (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\utils.js:357:5)
+    at FindCursor.toArray (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:251:41) {
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2022-12-18T22:54:17.246] [WARN] default - Ruta desconocida { ruta: { '0': '/add/images/cart.png' } }
+[2022-12-18T22:54:18.106] [ERROR] default - MongoNotConnectedError: Client must be connected before running operations
+    at C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\operations\execute_operation.js:20:33
+    at maybePromise (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\utils.js:357:5)
+    at executeOperation (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\operations\execute_operation.js:16:37)
+    at FindCursor._initialize (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\find_cursor.js:54:50)
+    at [kInit] (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:428:14)
+    at next (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:499:22)
+    at fetchDocs (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:256:17)
+    at C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:273:13
+    at maybePromise (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\utils.js:357:5)
+    at FindCursor.toArray (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:251:41) {
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2022-12-18T22:57:00.060] [ERROR] default - NewError {
+  codigo: 500,
+  descripcion: 'Error al listar()',
+  detalle: SyntaxError: Unexpected token u in JSON at position 0
+      at JSON.parse (<anonymous>)
+      at asPOJO (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/utils/object.js:1:35)
+      at ProductosDaoMongoDb.listar (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/models/contenedores/contenedorMongoDb.js:22:44)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async productID (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/controllers/page.controller.js:97:21)
+}
+[2022-12-18T22:58:39.528] [ERROR] default - NewError {
+  codigo: 500,
+  descripcion: 'Error al listar()',
+  detalle: SyntaxError: Unexpected token u in JSON at position 0
+      at JSON.parse (<anonymous>)
+      at asPOJO (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/utils/object.js:1:35)
+      at ProductosDaoMongoDb.listar (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/models/contenedores/contenedorMongoDb.js:22:44)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async productID (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/controllers/page.controller.js:97:21)
+}
+[2022-12-18T22:59:43.890] [ERROR] default - NewError {
+  codigo: 500,
+  descripcion: 'Error al listar()',
+  detalle: SyntaxError: Unexpected token u in JSON at position 0
+      at JSON.parse (<anonymous>)
+      at asPOJO (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/utils/object.js:1:35)
+      at ProductosDaoMongoDb.listar (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/models/contenedores/contenedorMongoDb.js:22:44)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async productID (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/controllers/page.controller.js:97:21)
+}
+[2022-12-18T23:01:59.199] [ERROR] default - NewError {
+  codigo: 500,
+  descripcion: 'Error al listar()',
+  detalle: SyntaxError: Unexpected token u in JSON at position 0
+      at JSON.parse (<anonymous>)
+      at asPOJO (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/utils/object.js:1:35)
+      at ProductosDaoMongoDb.listar (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/models/contenedores/contenedorMongoDb.js:22:44)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async productID (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/controllers/page.controller.js:97:21)
+}
+[2022-12-18T23:02:39.547] [ERROR] default - NewError {
+  codigo: 500,
+  descripcion: 'Error al listar()',
+  detalle: SyntaxError: Unexpected token u in JSON at position 0
+      at JSON.parse (<anonymous>)
+      at asPOJO (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/utils/object.js:1:35)
+      at ProductosDaoMongoDb.listar (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/models/contenedores/contenedorMongoDb.js:22:44)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async productID (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/controllers/page.controller.js:97:21)
+}
+[2022-12-18T23:10:43.488] [ERROR] default - NewError {
+  codigo: 500,
+  descripcion: 'Error al listar()',
+  detalle: SyntaxError: Unexpected token u in JSON at position 0
+      at JSON.parse (<anonymous>)
+      at asPOJO (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/utils/object.js:1:35)
+      at ProductosDaoMongoDb.listar (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/models/contenedores/contenedorMongoDb.js:22:44)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async productID (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/controllers/page.controller.js:99:21)
+}
+[2022-12-18T23:13:51.976] [ERROR] default - MongoNotConnectedError: Client must be connected before running operations
+    at C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\operations\execute_operation.js:20:33
+    at maybePromise (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\utils.js:357:5)
+    at executeOperation (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\operations\execute_operation.js:16:37)
+    at FindCursor._initialize (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\find_cursor.js:54:50)
+    at [kInit] (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:428:14)
+    at next (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:499:22)
+    at fetchDocs (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:256:17)
+    at C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:273:13
+    at maybePromise (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\utils.js:357:5)
+    at FindCursor.toArray (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:251:41) {
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2022-12-18T23:13:52.468] [WARN] default - Ruta desconocida { ruta: { '0': '/add/images/cart.png' } }
+[2022-12-18T23:13:53.249] [ERROR] default - MongoNotConnectedError: Client must be connected before running operations
+    at C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\operations\execute_operation.js:20:33
+    at maybePromise (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\utils.js:357:5)
+    at executeOperation (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\operations\execute_operation.js:16:37)
+    at FindCursor._initialize (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\find_cursor.js:54:50)
+    at [kInit] (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:428:14)
+    at next (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:499:22)
+    at fetchDocs (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:256:17)
+    at C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:273:13
+    at maybePromise (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\utils.js:357:5)
+    at FindCursor.toArray (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:251:41) {
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2022-12-18T23:15:40.399] [ERROR] default - MongoNotConnectedError: Client must be connected before running operations
+    at C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\operations\execute_operation.js:20:33
+    at maybePromise (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\utils.js:357:5)
+    at executeOperation (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\operations\execute_operation.js:16:37)
+    at FindCursor._initialize (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\find_cursor.js:54:50)
+    at [kInit] (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:428:14)
+    at next (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:499:22)
+    at fetchDocs (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:256:17)
+    at C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:273:13
+    at maybePromise (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\utils.js:357:5)
+    at FindCursor.toArray (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:251:41) {
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2022-12-18T23:15:40.775] [WARN] default - Ruta desconocida { ruta: { '0': '/add/images/cart.png' } }
+[2022-12-18T23:15:41.721] [ERROR] default - MongoNotConnectedError: Client must be connected before running operations
+    at C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\operations\execute_operation.js:20:33
+    at maybePromise (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\utils.js:357:5)
+    at executeOperation (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\operations\execute_operation.js:16:37)
+    at FindCursor._initialize (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\find_cursor.js:54:50)
+    at [kInit] (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:428:14)
+    at next (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:499:22)
+    at fetchDocs (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:256:17)
+    at C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:273:13
+    at maybePromise (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\utils.js:357:5)
+    at FindCursor.toArray (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongodb\lib\cursor\abstract_cursor.js:251:41) {
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2022-12-18T23:17:02.985] [WARN] default - Ruta desconocida { ruta: { '0': '/add/images/cart.png' } }
+[2022-12-18T23:17:29.656] [WARN] default - Ruta desconocida { ruta: { '0': '/add/images/cart.png' } }
+[2022-12-18T23:28:49.606] [WARN] default - Ruta desconocida { ruta: { '0': '/add/images/cart.png' } }
+[2022-12-18T23:38:10.920] [WARN] default - Ruta desconocida { ruta: { '0': '/add/images/cart.png' } }
+[2022-12-18T23:38:19.732] [WARN] default - Ruta desconocida { ruta: { '0': '/add/images/cart.png' } }
+[2022-12-18T23:39:14.021] [WARN] default - Ruta desconocida { ruta: { '0': '/add/images/cart.png' } }
+[2022-12-18T23:39:19.306] [WARN] default - Ruta desconocida { ruta: { '0': '/add/images/cart.png' } }
+[2022-12-18T23:43:05.321] [WARN] default - Ruta desconocida { ruta: { '0': '/add/images/cart.png' } }
+[2022-12-18T23:44:32.724] [WARN] default - Ruta desconocida { ruta: { '0': '/add/images/cart.png' } }
+[2022-12-19T00:48:12.000] [ERROR] default - TypeError: Cannot read properties of undefined (reading 'disconnect')
+    at ProductoFactory.listarTodo (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/classes/productos.factory.js:29:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async home (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/controllers/page.controller.js:34:27)
+[2022-12-19T18:54:58.899] [WARN] default - Ruta desconocida { ruta: { '0': '/add/images/cart.png' } }
+[2022-12-19T18:56:41.280] [WARN] default - Ruta desconocida { ruta: { '0': '/add/images/cart.png' } }
+[2022-12-19T19:37:31.442] [ERROR] default - TypeError: Cannot read properties of undefined (reading 'disconnect')
+    at ProductoFactory.listar (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/classes/productos.factory.js:17:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async productID (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/controllers/page.controller.js:94:21)
+[2022-12-19T19:38:04.892] [WARN] default - Ruta desconocida { ruta: { '0': '/add/images/cart.png' } }
+[2022-12-19T19:40:16.375] [WARN] default - Ruta desconocida { ruta: { '0': '/add/images/cart.png' } }

@@ -2,7 +2,7 @@ import admin from 'firebase-admin'
 import config from '../../config/config.js';
 import logger from '../../config/logger.config.js';
 
-
+let instance = null;
 //Se concecta
 admin.initializeApp({
     credential: admin.credential.cert(config.firebase)
@@ -61,5 +61,12 @@ export default class ContenedorFirebase{
         } catch ( error ) {
             logger.error(error) 
         }
+    }
+    static getInstance() {
+        if (!instance) {
+            instance = new MongoDBClient()
+        }
+
+        return instance;
     }
 }

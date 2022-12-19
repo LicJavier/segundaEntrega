@@ -64,9 +64,11 @@ function agregarProducto(data) {
 
 function finalizarPedido(params) {
     socket.emit("nueva-compra", params)
+    
 }
 
 const finalizar = document.getElementById('realizarCompra');
 finalizar.addEventListener('click', ()=>{
     finalizarPedido();
+    location.href='/home';
 })

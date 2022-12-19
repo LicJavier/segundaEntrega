@@ -1,7 +1,7 @@
 <div class="flex flex-col w-auto h-screen">
     <nav class="flex bg-blue-500 p-5 font-mono text-xl justify-between">
         <p class="p-4">Bienvenido</p>
-        <div><img class="h-12" id="cartIco" src="./images/cart.png" alt="" srcset=""></div>
+        <div><img class="h-12" id="cartIco" src="./images/cart.png" alt="logo cart"></div>
         <div>
             <img class="max-h-40" src={{userAvatar}} alt="avatar">
             <span> {{usuario}}</span>
@@ -23,7 +23,7 @@
                             <td class="p-5 font-mono text-3xl">{{productId.name}}</td>
                             <td class="p-5 font-mono text-3xl">$ {{productId.price}}</td>
                             <td class="p-5 font-mono text-3xl"><img class="max-h-60" src={{productId.img}} alt="logo producto"></td>
-                            <td class="p-5 font-mono text-3xl"> <button  class="text-white bg-black add-cart"><a href="add/{{id}}">Agregar al carrito</a></button></td>
+                            <td class="p-5 font-mono text-3xl"> <button  class="text-white bg-black add-cart"><a href="add/{{productId.id}}">Agregar al carrito</a></button></td>
                     </tr>
                 </tbody>
             </table>

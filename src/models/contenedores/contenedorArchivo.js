@@ -1,5 +1,7 @@
 import {promises as fs} from 'fs';
 
+let instance = null;
+
 export default class ContenedorArchivo{
     constructor(ruta){
         this.ruta = ruta;
@@ -61,4 +63,11 @@ export default class ContenedorArchivo{
             return [];
         }
     };
+    static getInstance() {
+        if (!instance) {
+            instance = new MongoDBClient()
+        }
+
+        return instance;
+    }
 }

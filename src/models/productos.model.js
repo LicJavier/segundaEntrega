@@ -6,7 +6,7 @@ export const productoSchema = Schema({
     stock: { type: Number, require: true },
     price: { type: Number, require: true },
     img: { type: String, require: true },
-    id: { type: String, require: true }
+    id2: { type: String, require: true }
 });
 
 export const productoModel = model('productos', productoSchema);
