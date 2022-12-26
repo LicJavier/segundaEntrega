@@ -1176,3 +1176,163 @@
     at ProductoFactory.listar (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/classes/productos.factory.js:17:23)
     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async productID (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/controllers/page.controller.js:94:21)
+[2022-12-25T21:56:00.899] [ERROR] default - NewError {
+  codigo: 500,
+  descripcion: 'Error al listar()',
+  detalle: CastError: Cast to ObjectId failed for value "productos" (type string) at path "_id" for model "productos"
+      at model.Query.exec (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:4884:21)
+      at Query.then (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:4983:15)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+    messageFormat: undefined,
+    stringValue: '"productos"',
+    kind: 'ObjectId',
+    value: 'productos',
+    path: '_id',
+    reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+        at new BSONTypeError (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\bson\lib\error.js:41:28)
+        at new ObjectId (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\bson\lib\objectid.js:67:23)
+        at castObjectId (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\cast\objectid.js:25:12)
+        at ObjectId.cast (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schema\objectid.js:246:12)
+        at SchemaType.applySetters (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1201:12)
+        at SchemaType._castForQuery (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1648:15)
+        at SchemaType.castForQuery (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1636:15)
+        at SchemaType.castForQueryWrapper (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1612:20)
+        at cast (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\cast.js:347:32)
+        at Query.cast (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:5312:12),
+    valueType: 'string'
+  }
+}
+[2022-12-25T21:56:00.905] [ERROR] default - ReferenceError: NewError is not defined
+    at ProductoFactory.listar (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/classes/productos.factory.js:14:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async productID (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/controllers/page.controller.js:94:21)
+[2022-12-25T21:58:07.281] [ERROR] default - NewError {
+  codigo: 500,
+  descripcion: 'Error al listar()',
+  detalle: CastError: Cast to ObjectId failed for value "productos" (type string) at path "_id" for model "productos"
+      at model.Query.exec (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:4884:21)
+      at Query.then (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:4983:15)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+    messageFormat: undefined,
+    stringValue: '"productos"',
+    kind: 'ObjectId',
+    value: 'productos',
+    path: '_id',
+    reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+        at new BSONTypeError (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\bson\lib\error.js:41:28)
+        at new ObjectId (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\bson\lib\objectid.js:67:23)
+        at castObjectId (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\cast\objectid.js:25:12)
+        at ObjectId.cast (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schema\objectid.js:246:12)
+        at SchemaType.applySetters (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1201:12)
+        at SchemaType._castForQuery (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1648:15)
+        at SchemaType.castForQuery (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1636:15)
+        at SchemaType.castForQueryWrapper (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1612:20)
+        at cast (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\cast.js:347:32)
+        at Query.cast (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:5312:12),
+    valueType: 'string'
+  }
+}
+[2022-12-25T21:58:07.292] [ERROR] default - ReferenceError: NewError is not defined
+    at ProductoFactory.listar (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/classes/productos.factory.js:14:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async productID (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/controllers/page.controller.js:94:21)
+[2022-12-25T21:59:40.001] [ERROR] default - NewError {
+  codigo: 500,
+  descripcion: 'Error al listar()',
+  detalle: CastError: Cast to ObjectId failed for value "productos" (type string) at path "_id" for model "productos"
+      at model.Query.exec (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:4884:21)
+      at Query.then (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:4983:15)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+    messageFormat: undefined,
+    stringValue: '"productos"',
+    kind: 'ObjectId',
+    value: 'productos',
+    path: '_id',
+    reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+        at new BSONTypeError (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\bson\lib\error.js:41:28)
+        at new ObjectId (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\bson\lib\objectid.js:67:23)
+        at castObjectId (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\cast\objectid.js:25:12)
+        at ObjectId.cast (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schema\objectid.js:246:12)
+        at SchemaType.applySetters (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1201:12)
+        at SchemaType._castForQuery (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1648:15)
+        at SchemaType.castForQuery (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1636:15)
+        at SchemaType.castForQueryWrapper (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1612:20)
+        at cast (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\cast.js:347:32)
+        at Query.cast (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:5312:12),
+    valueType: 'string'
+  }
+}
+[2022-12-25T21:59:40.008] [ERROR] default - ReferenceError: logger is not defined
+    at ProductoFactory.listar (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/classes/productos.factory.js:16:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async productID (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/controllers/page.controller.js:94:21)
+[2022-12-25T22:00:31.126] [ERROR] default - NewError {
+  codigo: 500,
+  descripcion: 'Error al listar()',
+  detalle: CastError: Cast to ObjectId failed for value "productos" (type string) at path "_id" for model "productos"
+      at model.Query.exec (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:4884:21)
+      at Query.then (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:4983:15)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+    messageFormat: undefined,
+    stringValue: '"productos"',
+    kind: 'ObjectId',
+    value: 'productos',
+    path: '_id',
+    reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+        at new BSONTypeError (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\bson\lib\error.js:41:28)
+        at new ObjectId (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\bson\lib\objectid.js:67:23)
+        at castObjectId (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\cast\objectid.js:25:12)
+        at ObjectId.cast (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schema\objectid.js:246:12)
+        at SchemaType.applySetters (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1201:12)
+        at SchemaType._castForQuery (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1648:15)
+        at SchemaType.castForQuery (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1636:15)
+        at SchemaType.castForQueryWrapper (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1612:20)
+        at cast (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\cast.js:347:32)
+        at Query.cast (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:5312:12),
+    valueType: 'string'
+  }
+}
+[2022-12-25T22:00:31.131] [ERROR] default - NewError {
+  codigo: 500,
+  descripcion: 'Error al listar()',
+  detalle: TypeError: Cannot read properties of undefined (reading 'name')
+      at ProductosDaoMongoDb.listar (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/models/contenedores/contenedorMongoDb.js:29:56)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async ProductoFactory.listar (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/classes/productos.factory.js:12:25)
+      at async productID (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/controllers/page.controller.js:94:21)
+}
+[2022-12-25T22:00:31.897] [ERROR] default - NewError {
+  codigo: 500,
+  descripcion: 'Error al listar()',
+  detalle: CastError: Cast to ObjectId failed for value "alt="logo" (type string) at path "_id" for model "productos"
+      at model.Query.exec (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:4884:21)
+      at Query.then (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:4983:15)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+    messageFormat: undefined,
+    stringValue: '"alt="logo"',
+    kind: 'ObjectId',
+    value: 'alt="logo',
+    path: '_id',
+    reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+        at new BSONTypeError (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\bson\lib\error.js:41:28)
+        at new ObjectId (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\bson\lib\objectid.js:67:23)
+        at castObjectId (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\cast\objectid.js:25:12)
+        at ObjectId.cast (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schema\objectid.js:246:12)
+        at SchemaType.applySetters (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1201:12)
+        at SchemaType._castForQuery (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1648:15)
+        at SchemaType.castForQuery (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1636:15)
+        at SchemaType.castForQueryWrapper (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\schematype.js:1612:20)
+        at cast (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\cast.js:347:32)
+        at Query.cast (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\mongoose\lib\query.js:5312:12),
+    valueType: 'string'
+  }
+}
+[2022-12-25T22:00:31.900] [ERROR] default - NewError {
+  codigo: 500,
+  descripcion: 'Error al listar()',
+  detalle: TypeError: Cannot read properties of undefined (reading 'name')
+      at ProductosDaoMongoDb.listar (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/models/contenedores/contenedorMongoDb.js:29:56)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async ProductoFactory.listar (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/classes/productos.factory.js:12:25)
+      at async productID (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/controllers/page.controller.js:94:21)
+}

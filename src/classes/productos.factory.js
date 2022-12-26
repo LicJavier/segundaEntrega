@@ -1,4 +1,6 @@
 import ProductoDto from "./productos.dtos.js";
+import NewError from "./NewError.class.js";
+import logger from "../config/logger.config.js";
 
 export default class ProductoFactory{
     constructor(dao){

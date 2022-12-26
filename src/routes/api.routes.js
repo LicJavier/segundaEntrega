@@ -1,6 +1,6 @@
 import { Router } from "express";
 import passport from "passport";
-import { deslogueo, any ,cart ,errorLogin, errorRegister, home, login, productID, register, registro, registroSuccess, guardarProducto} from "../controllers/page.controller.js";
+import { deslogueo, any ,cart ,errorLogin, errorRegister, home, login, productID, register, registro, registroSuccess, guardarProducto } from "../controllers/page.controller.js";
 import { auth } from "../../server.js";
 
 
