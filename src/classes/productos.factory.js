@@ -45,4 +45,13 @@ export default class ProductoFactory{
             logger.error(cuserr);
         }
     }
+
+    async eliminar( id ){
+    try {
+        const product = await this.dao.eliminar(id)
+        return product;
+    } catch (error) {
+        const cuserr = new NewError(500, 'Error al actualizar()', error);
+        logger.error(cuserr);}
+    }
 }
