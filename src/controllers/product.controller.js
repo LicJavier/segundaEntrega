@@ -29,7 +29,7 @@ export async function guardarProducto( req , res ) {
         try {        
             let objeto = req.body;
             let productoNuevo = await productFactory.guardar( objeto );
-            res.status(201).json({msg: "Producto agregado", data: productoNuevo , id: productoNuevo.id });
+            res.status(201).json(productoNuevo);
         } catch (error) {
             logger.error(error)
         }
@@ -40,7 +40,7 @@ export async function actualizarProducto( req , res ) {
         const id = req.params.id;
         const body = req.body;
         let productId = await productFactory.actualizar( id , body );
-        res.status(201).json({ msg: "Producto modificado" , data : productId , id : id });
+        res.status(201).json(productId);
     } catch (error) {
         logger.error(error)
     }

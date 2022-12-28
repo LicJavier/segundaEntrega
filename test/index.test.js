@@ -1,4 +1,3 @@
-import mongoose from "mongoose";
 import supertest from "supertest";
 import { expect } from "chai";
 import { app } from "../server.js";
@@ -24,20 +23,21 @@ describe('Test de integración de tareas', () =>{
         })
     })
     
-    describe('POST', () => {
-        it('debería incorporar un usuario', async () => {
-            const producto = generar()
-
+    describe('Guardado de un producto a través de POST en mongoDB Atlas', () => {
+        it('Debería obtener un 201 por el guardado', async () => {
+            const producto = await generar()
             const response = await request.post('/').send(producto)
             expect(response.status).to.eql(201)
-
+        })
+        it('El producto debe incluir keys', async () =>{
+            const producto = await generar()
+            const response = await request.post('/').send(producto)
             const product = response.body
-            expect(product).to.include.keys('name', 'price','img','stock','id')
-            expect(product.nombre).to.eql(product.nombre)
-            expect(product.price).to.eql(product.price)
-            expect(product.img).to.eql(product.img)
-            expect(product.stock).to.eql(product.stock)
-            expect(product.id).to.eql(product.id)
+            console.log(product)
+            expect(product).to.have.property('name')
+            expect(product).to.have.property('stock')
+            expect(product).to.have.property('price')
+            expect(product).to.have.property('img')
         })
     })
     afterEach(function(){
@@ -66,9 +66,9 @@ async function generar() {
     const producto = {
         name: 'PRODUCTO FAKE',
         price: 9999,
+        categoria: "mandala" ,
         img: 'https://creaciones-natu.vercel.app/images/buho.jpeg',
-        stock: 0,
-        id: '63a9183e4ogsm1'
+        stock: 0
     }
     return producto
 }
