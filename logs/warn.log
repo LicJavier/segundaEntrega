@@ -1573,3 +1573,135 @@
 [2022-12-25T22:02:55.003] [WARN] default - Ruta desconocida { ruta: { '0': '/add/images/cart.png' } }
 [2022-12-25T22:03:25.001] [WARN] default - Ruta desconocida { ruta: { '0': '/add/images/cart.png' } }
 [2022-12-25T22:36:47.242] [WARN] default - Ruta desconocida { ruta: { '0': '/add/63964db6200731d08c669dbb/api/productos' } }
+[2023-01-09T23:38:23.017] [ERROR] default - NewError {
+  codigo: 500,
+  descripcion: 'Error al listar()',
+  detalle: SyntaxError: Unexpected token u in JSON at position 0
+      at JSON.parse (<anonymous>)
+      at asPOJO (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/utils/object.js:1:35)
+      at ProductosDaoMongoDb.listar (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/models/contenedores/contenedorMongoDb.js:22:44)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async Object.consultaProducto (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/graphql/resolver.js:4:12)
+      at async Promise.all (index 0)
+      at async graphqlMiddleware (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express-graphql\index.js:125:26)
+}
+[2023-01-09T23:39:40.736] [ERROR] default - NewError {
+  codigo: 500,
+  descripcion: 'Error al listar()',
+  detalle: SyntaxError: Unexpected token u in JSON at position 0
+      at JSON.parse (<anonymous>)
+      at asPOJO (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/utils/object.js:1:35)
+      at ProductosDaoMongoDb.listar (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/models/contenedores/contenedorMongoDb.js:22:44)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async Object.consultaProducto (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/graphql/resolver.js:4:12)
+      at async Promise.all (index 0)
+      at async graphqlMiddleware (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express-graphql\index.js:125:26)
+}
+[2023-01-09T23:42:14.810] [ERROR] default - NewError {
+  codigo: 500,
+  descripcion: 'Error al listar()',
+  detalle: SyntaxError: Unexpected token u in JSON at position 0
+      at JSON.parse (<anonymous>)
+      at asPOJO (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/utils/object.js:1:35)
+      at ProductosDaoMongoDb.listar (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/models/contenedores/contenedorMongoDb.js:22:44)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async Object.consultaProducto (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/graphql/resolver.js:4:12)
+      at async Promise.all (index 0)
+      at async graphqlMiddleware (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express-graphql\index.js:125:26)
+}
+[2023-01-09T23:43:22.329] [ERROR] default - NewError {
+  codigo: 500,
+  descripcion: 'Error al listar()',
+  detalle: SyntaxError: Unexpected token u in JSON at position 0
+      at JSON.parse (<anonymous>)
+      at asPOJO (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/utils/object.js:1:35)
+      at ProductosDaoMongoDb.listar (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/models/contenedores/contenedorMongoDb.js:22:44)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async Object.consultaProducto (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/graphql/resolver.js:4:12)
+      at async Promise.all (index 0)
+      at async graphqlMiddleware (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express-graphql\index.js:125:26)
+}
+[2023-01-09T23:43:45.953] [ERROR] default - NewError {
+  codigo: 500,
+  descripcion: 'Error al listar()',
+  detalle: SyntaxError: Unexpected token u in JSON at position 0
+      at JSON.parse (<anonymous>)
+      at asPOJO (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/utils/object.js:1:35)
+      at ProductosDaoMongoDb.listar (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/models/contenedores/contenedorMongoDb.js:22:44)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async Object.consultaProducto (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/graphql/resolver.js:4:12)
+      at async Promise.all (index 0)
+      at async graphqlMiddleware (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express-graphql\index.js:125:26)
+}
+[2023-01-09T23:45:34.821] [ERROR] default - NewError {
+  codigo: 500,
+  descripcion: 'Error al listar()',
+  detalle: SyntaxError: Unexpected token u in JSON at position 0
+      at JSON.parse (<anonymous>)
+      at asPOJO (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/utils/object.js:1:35)
+      at ProductosDaoMongoDb.listar (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/models/contenedores/contenedorMongoDb.js:22:44)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async Object.consultaProducto (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/graphql/resolver.js:4:12)
+      at async Promise.all (index 0)
+      at async graphqlMiddleware (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express-graphql\index.js:125:26)
+}
+[2023-01-09T23:47:33.684] [ERROR] default - NewError {
+  codigo: 500,
+  descripcion: 'Error al listar()',
+  detalle: SyntaxError: Unexpected token u in JSON at position 0
+      at JSON.parse (<anonymous>)
+      at asPOJO (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/utils/object.js:1:35)
+      at ProductosDaoMongoDb.listar (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/models/contenedores/contenedorMongoDb.js:22:44)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async Object.consultaProducto (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/graphql/resolver.js:4:12)
+      at async Promise.all (index 0)
+      at async graphqlMiddleware (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express-graphql\index.js:125:26)
+}
+[2023-01-09T23:52:51.132] [ERROR] default - NewError {
+  codigo: 500,
+  descripcion: 'Error al listar()',
+  detalle: SyntaxError: Unexpected token u in JSON at position 0
+      at JSON.parse (<anonymous>)
+      at asPOJO (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/utils/object.js:1:35)
+      at ProductosDaoMongoDb.listar (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/models/contenedores/contenedorMongoDb.js:22:44)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async Object.consultaProducto (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/graphql/resolver.js:4:12)
+      at async Promise.all (index 0)
+      at async graphqlMiddleware (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express-graphql\index.js:125:26)
+}
+[2023-01-09T23:53:40.531] [ERROR] default - NewError {
+  codigo: 500,
+  descripcion: 'Error al listar()',
+  detalle: SyntaxError: Unexpected token u in JSON at position 0
+      at JSON.parse (<anonymous>)
+      at asPOJO (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/utils/object.js:1:35)
+      at ProductosDaoMongoDb.listar (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/models/contenedores/contenedorMongoDb.js:22:44)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async Object.consultaProducto (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/graphql/resolver.js:4:12)
+      at async Promise.all (index 0)
+      at async graphqlMiddleware (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express-graphql\index.js:125:26)
+}
+[2023-01-09T23:53:44.410] [ERROR] default - NewError {
+  codigo: 500,
+  descripcion: 'Error al listar()',
+  detalle: SyntaxError: Unexpected token u in JSON at position 0
+      at JSON.parse (<anonymous>)
+      at asPOJO (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/utils/object.js:1:35)
+      at ProductosDaoMongoDb.listar (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/models/contenedores/contenedorMongoDb.js:22:44)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async Object.consultaProducto (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/graphql/resolver.js:4:12)
+      at async Promise.all (index 0)
+      at async graphqlMiddleware (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express-graphql\index.js:125:26)
+}
+[2023-01-09T23:54:23.817] [ERROR] default - NewError {
+  codigo: 500,
+  descripcion: 'Error al listar()',
+  detalle: SyntaxError: Unexpected token u in JSON at position 0
+      at JSON.parse (<anonymous>)
+      at asPOJO (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/utils/object.js:1:35)
+      at ProductosDaoMongoDb.listar (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/models/contenedores/contenedorMongoDb.js:22:44)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async Object.consultaProducto (file:///C:/Users/Sx_Ja/OneDrive/Escritorio/coderhouse/BackEnd/dividirEnCapas/src/graphql/resolver.js:4:12)
+      at async Promise.all (index 0)
+      at async graphqlMiddleware (C:\Users\Sx_Ja\OneDrive\Escritorio\coderhouse\BackEnd\dividirEnCapas\node_modules\express-graphql\index.js:125:26)
+}

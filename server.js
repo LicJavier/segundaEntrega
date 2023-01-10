@@ -19,17 +19,20 @@ import logger from './src/config/logger.config.js';
 import cartAdminMessage from './src/utils/nodemailerAdmin.js';
 import cartUserMessage from './src/utils/nodemailerUser.js';
 import whatsappMsj from './src/utils/twilio.js';
-import routerPage from './src/routes/api.routes.js';
+// import routerPage from './src/routes/api.routes.js';
 // import MensajesDaoFirebase from './src/models/daos/mensajes/mensajesDaoFirebase.js';
 import UsuarioDaoMongoDb from './src/models/daos/usuariosDaoMongoDb.js';
 import { usermail, username } from './src/controllers/page.controller.js';
 export const usuarioDao = new UsuarioDaoMongoDb;
 import { carritosDao } from './src/controllers/page.controller.js';
+import { graphqlHTTP } from 'express-graphql';
+
 // const mensajesDao = new MensajesDaoFirebase;
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 // moment.locale('es');
 // const hoy = moment();
+
 dotenv.config();
 const options ={ alias : { p : 'puerto' , g : 'gestor' , m : 'metodo' } , default : { p : 8080 , g : 'FORK' , m : "mongodb" } }
 const mini = minimist( process.argv.slice(2) , options );
@@ -145,7 +148,8 @@ app.set('view engine', 'hbs');
 app.use('/api/productos', routerProductos);
 app.use('/api/carrito', routerCarrito);
 app.use('/api/randoms', routerRandoms);
-app.use('/' , routerPage);
+// app.use('/' , routerPage);
+app.use('/', graphRouter)
 
 //----------------------------------------------------------------------------------------------
 //---------------------------------------SERVIDOR-----------------------------------------------
@@ -188,3 +192,20 @@ io.sockets.on( 'nueva-compra' , async (data) =>{
     await whatsappMsj( nombre , email );
     carritosDao.eliminarTodo();
 })
+import schema from './src/graphql/schema.js';
+import { consultaCarritos , consultaProducto , consultaProductos , agregarProducto , actualizarProducto , eliminarProducto } from './src/graphql/resolver.js';
+import graphRouter from './src/routes/graphql.routes.js';
+
+app.use('/graphql', graphqlHTTP({
+    schema: schema,
+    rootValue:{
+        consultaProductos,
+        consultaProducto,
+        consultaCarritos,
+        agregarProducto,
+        actualizarProducto,
+        eliminarProducto
+    },
+    graphiql: true
+}))
+
