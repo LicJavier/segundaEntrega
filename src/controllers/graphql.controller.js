@@ -33,7 +33,27 @@ async function agregarAxios(object) {
     return res.data;
 }
 
+async function actualizarAxios( id , object ) {
+    const res = await axios.post("http://localhost:8080/graphql",
+        { "query":`mutation {actualizarProducto{datos: {name:${object.name}, price:${object.price}, img:${object.img}, categoria:${object.categoria}}} {name,id,price,img}}` },
+        [{
+            headers: {
+                "Content-Type": "application/json"
+            }
+    }])
+    return res.data;
+}
 
+async function eliminarAxios(id) {
+    const res = await axios.post("http://localhost:8080/graphql",
+        { "query":`query {eliminarProducto{id: ${id}} {name,id}}` },
+        [{
+            headers: {
+                "Content-Type": "application/json"
+            }
+    }])
+    return res.data;
+}
 
 export async function listarTodo( req , res ) {
         try {
@@ -55,33 +75,35 @@ export async function listarProducto( req , res ) {
         console.log(error)
     }
 }
-// export async function guardarProducto( req , res ) {
-//         try {        
-//             let objeto = req.body;
-//             let productoNuevo = await productFactory.guardar( objeto );
-//             res.status(201).json(productoNuevo);
-//         } catch (error) {
-//             logger.error(error)
-//         }
-// }
+export async function guardarProducto( req , res ) {
+        try {        
+            let objeto = req.body;
+            let productoNuevo = await agregarAxios( objeto );
+            res.status(201).json(productoNuevo);
+        } catch (error) {
+            logger.error(error)
+        }
+}
 
-// export async function actualizarProducto( req , res ) {
-//     try {
-//         const id = req.params.id;
-//         const body = req.body;
-//         let productId = await productFactory.actualizar( id , body );
-//         res.status(201).json(productId);
-//     } catch (error) {
-//         logger.error(error)
-//     }
-// }
+export async function actualizarProducto( req , res ) {
+    try {
+        const id = req.params.id;
+        const body = req.body;
+        const result = await actualizarAxios( id , body )
+        let productId = result.data.actualizarProducto
+        res.status(201).json(productId);
+    } catch (error) {
+        logger.error(error)
+    }
+}
 
-// export async function eliminarProducto( req , res ) {
-//     try {
-//         let id = req.params.id;
-//         let productId = await productFactory.eliminar( id );
-//         res.status(202).json( { "producto eliminado": productId } );  
-//     } catch (error) {
-//         logger.error(error)
-//     }
-// }
+export async function eliminarProducto( req , res ) {
+    try {
+        let id = req.params.id;
+        const result = await eliminarAxios(id); 
+        let productId = result.data.eliminarProducto;
+        res.status(202).json( { "producto eliminado": productId } );  
+    } catch (error) {
+        logger.error(error)
+    }
+}

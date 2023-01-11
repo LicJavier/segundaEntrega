@@ -13,7 +13,7 @@ const schema = new buildSchema(
             productos: Producto
         }
         type Producto {
-            id: String,
+            id: ID!,
             name: String,
             categoria: String,
             price: String,
@@ -22,13 +22,13 @@ const schema = new buildSchema(
 
         type Query{
             consultaProductos: [Producto]
-            consultaProducto(id: String): Producto
+            consultaProducto(id: ID!): Producto
             consultaCarritos: [Carrito]
         }
         type Mutation{
             agregarProducto(datos: ProductoInput): Producto
-            actualizarProducto(id: String, datos: ProductoInput): Producto
-            eliminarProducto(id: String): Producto
+            actualizarProducto(id: ID!, datos: ProductoInput): Producto
+            eliminarProducto(id: ID!): Producto
         }
     `
 )
