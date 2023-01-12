@@ -4,7 +4,7 @@ import { listarTodo , listarProducto, eliminarProducto, guardarProducto, actuali
 const graphRouter = Router();
 
 graphRouter.get('/', listarTodo)
-graphRouter.post('/:id', listarProducto)
+graphRouter.get('/:id', listarProducto)
 graphRouter.post('/', guardarProducto)
 graphRouter.put('/:id', actualizarProducto)
 graphRouter.delete('/:id', eliminarProducto);

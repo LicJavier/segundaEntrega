@@ -13,7 +13,7 @@ async function listarTodoAxios() {
 
 async function listarAxios(id) {
     const res = await axios.post("http://localhost:8080/graphql",
-        { "query":`query {consultaProducto{id: ${id}} {name,id,price,img}}` },
+        { "query":`query {consultaProducto (id: "${id}"){name,id}}` },
         [{
             headers: {
                 "Content-Type": "application/json"
@@ -22,9 +22,9 @@ async function listarAxios(id) {
     return res.data;
 }
 
-async function agregarAxios(object) {
+async function agregarAxios({object}) {
     const res = await axios.post("http://localhost:8080/graphql",
-        { "query":`mutation {agregarProducto{datos: {name:${object.name}, price:${object.price}, img:${object.img}, categoria:${object.categoria}}} {name,id,price,img}}` },
+        { "query":`mutation {agregarProducto{datos: (name:${object.name}, price:${object.price}, img:${object.img}, categoria:${object.categoria})} {name,id,price,img}}` },
         [{
             headers: {
                 "Content-Type": "application/json"
@@ -35,7 +35,7 @@ async function agregarAxios(object) {
 
 async function actualizarAxios( id , object ) {
     const res = await axios.post("http://localhost:8080/graphql",
-        { "query":`mutation {actualizarProducto{datos: {name:${object.name}, price:${object.price}, img:${object.img}, categoria:${object.categoria}}} {name,id,price,img}}` },
+        { "query":`mutation {actualizarProducto(id: ${id}){datos: {name:${object.name}, price:${object.price}, img:${object.img}, categoria:${object.categoria}}} {name,id,price,img}}` },
         [{
             headers: {
                 "Content-Type": "application/json"
@@ -46,7 +46,7 @@ async function actualizarAxios( id , object ) {
 
 async function eliminarAxios(id) {
     const res = await axios.post("http://localhost:8080/graphql",
-        { "query":`query {eliminarProducto{id: ${id}} {name,id}}` },
+        { "query":`query {eliminarProducto(id: ${id}) {name,id}}` },
         [{
             headers: {
                 "Content-Type": "application/json"
@@ -68,8 +68,17 @@ export async function listarTodo( req , res ) {
 export async function listarProducto( req , res ) {
     try {        
         const id = req.params.id
+        console.log("---------------------------------------------------------------")
+        console.log("---------------------------------------------------------------")
+        console.log("este id",id)
         const result = await listarAxios(id);
+        console.log("---------------------------------------------------------------")
+        console.log("---------------------------------------------------------------")
+        console.log( result)
         const productId = result.data.consultaProducto;
+        console.log("---------------------------------------------------------------")
+        console.log("---------------------------------------------------------------")
+        console.log("este producto" , productId)
         res.status(201).json({Producto : productId})
     } catch (error) {
         console.log(error)
@@ -81,7 +90,7 @@ export async function guardarProducto( req , res ) {
             let productoNuevo = await agregarAxios( objeto );
             res.status(201).json(productoNuevo);
         } catch (error) {
-            logger.error(error)
+            console.log(error)
         }
 }
 
@@ -93,7 +102,7 @@ export async function actualizarProducto( req , res ) {
         let productId = result.data.actualizarProducto
         res.status(201).json(productId);
     } catch (error) {
-        logger.error(error)
+        console.log(error)
     }
 }
 
@@ -104,6 +113,6 @@ export async function eliminarProducto( req , res ) {
         let productId = result.data.eliminarProducto;
         res.status(202).json( { "producto eliminado": productId } );  
     } catch (error) {
-        logger.error(error)
+        console.log(error)
     }
 }
